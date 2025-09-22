@@ -28,6 +28,128 @@ import {
   X
 } from 'lucide-react';
 
+// Video Background Component with cycling brewery scenes
+function VideoBackground({ isDarkMode }: { isDarkMode: boolean }) {
+  const [currentScene, setCurrentScene] = useState(0);
+  
+  const breweryScenes = [
+    {
+      src: "https://static.wixstatic.com/media/4d5d5f_4eaf08d719e74f989f654c1f3e073dac~mv2.png?originWidth=1920&originHeight=1024",
+      alt: "Cinematic brewery interior with people enjoying craft beer and warm ambient lighting"
+    },
+    {
+      src: "https://static.wixstatic.com/media/4d5d5f_54402b3f594b462aa9bfa381bef03ee5~mv2.png?originWidth=1920&originHeight=1024",
+      alt: "Close-up of craft beer being poured with delicious pub food on wooden table"
+    },
+    {
+      src: "https://static.wixstatic.com/media/4d5d5f_9709d3a2ea284e00860b5af20feb54ee~mv2.png?originWidth=1920&originHeight=1024",
+      alt: "Bustling brewery scene with friends toasting beer glasses and social dining"
+    },
+    {
+      src: "https://static.wixstatic.com/media/4d5d5f_d331e9bbf1104862a432bb067ec17970~mv2.png?originWidth=1920&originHeight=1024",
+      alt: "Craft beer pub atmosphere with neon lighting and urban vibes"
+    }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentScene((prev) => (prev + 1) % breweryScenes.length);
+    }, 5000); // Change scene every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={currentScene}
+        className="relative w-full h-full"
+        initial={{ opacity: 0, scale: 1.1 }}
+        animate={{ 
+          opacity: 1, 
+          scale: [1.1, 1.05, 1.1],
+        }}
+        exit={{ opacity: 0, scale: 1 }}
+        transition={{
+          opacity: { duration: 1 },
+          scale: { duration: 15, repeat: Infinity, ease: "easeInOut" }
+        }}
+      >
+        <Image
+          src={breweryScenes[currentScene].src}
+          alt={breweryScenes[currentScene].alt}
+          className="w-full h-full object-cover"
+          width={1920}
+        />
+        
+        {/* Steam/smoke effects for food and drinks */}
+        <div className="absolute inset-0">
+          {[...Array(4)].map((_, i) => (
+            <motion.div
+              key={`steam-${currentScene}-${i}`}
+              className="absolute w-8 h-8 rounded-full bg-white/10 blur-sm"
+              style={{
+                left: `${30 + i * 20}%`,
+                bottom: `${20 + i * 5}%`,
+              }}
+              animate={{
+                y: [0, -80, -120],
+                opacity: [0.6, 0.3, 0],
+                scale: [0.5, 1.2, 0.8]
+              }}
+              transition={{
+                duration: 4 + i * 0.5,
+                repeat: Infinity,
+                delay: i * 1.5,
+                ease: "easeOut"
+              }}
+            />
+          ))}
+        </div>
+        
+        {/* Ambient light flicker effect */}
+        <motion.div
+          className="absolute inset-0 bg-gradient-to-r from-amber-500/5 via-transparent to-orange-500/5"
+          animate={{
+            opacity: [0.3, 0.6, 0.4, 0.7, 0.3]
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+        
+        {/* Beer foam bubbles effect */}
+        <div className="absolute inset-0">
+          {[...Array(8)].map((_, i) => (
+            <motion.div
+              key={`bubble-${currentScene}-${i}`}
+              className="absolute w-1 h-1 rounded-full bg-amber-200/40"
+              style={{
+                left: `${15 + i * 10}%`,
+                bottom: `${10 + (i % 3) * 15}%`,
+              }}
+              animate={{
+                y: [0, -60, -100],
+                x: [0, Math.sin(i) * 20, Math.sin(i + 1) * 15],
+                opacity: [0.8, 0.4, 0],
+                scale: [0.3, 0.8, 0.2]
+              }}
+              transition={{
+                duration: 5 + i * 0.3,
+                repeat: Infinity,
+                delay: i * 0.8,
+                ease: "easeOut"
+              }}
+            />
+          ))}
+        </div>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
+
 export default function HomePage() {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -258,67 +380,9 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section id="hero" className="relative h-screen overflow-hidden pt-20">
-        {/* Background Video Effect */}
+        {/* Background Video Effect - Cycling Brewery Scenes */}
         <div className="absolute inset-0">
-          <motion.div
-            className="relative w-full h-full"
-            animate={{
-              scale: [1, 1.05, 1],
-            }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-          >
-            <Image
-              src="https://static.wixstatic.com/media/4d5d5f_d331e9bbf1104862a432bb067ec17970~mv2.png?originWidth=1920&originHeight=1024"
-              alt="Cinematic brewery atmosphere with warm lighting and craft beer taps"
-              className="w-full h-full object-cover"
-              width={1920}
-            />
-            
-            {/* Animated overlay effects to simulate video movement */}
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent"
-              animate={{
-                x: ['-100%', '100%'],
-                opacity: [0, 0.3, 0]
-              }}
-              transition={{
-                duration: 8,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            />
-            
-            {/* Floating particles effect */}
-            <div className="absolute inset-0">
-              {[...Array(6)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  className={`absolute w-2 h-2 rounded-full ${
-                    isDarkMode ? 'bg-primary/20' : 'bg-primary/30'
-                  }`}
-                  style={{
-                    left: `${20 + i * 15}%`,
-                    top: `${30 + i * 10}%`,
-                  }}
-                  animate={{
-                    y: [-20, -100, -20],
-                    opacity: [0, 1, 0],
-                    scale: [0.5, 1, 0.5]
-                  }}
-                  transition={{
-                    duration: 6 + i,
-                    repeat: Infinity,
-                    delay: i * 2,
-                    ease: "easeInOut"
-                  }}
-                />
-              ))}
-            </div>
-          </motion.div>
+          <VideoBackground isDarkMode={isDarkMode} />
         </div>
         
         {/* Overlay */}
