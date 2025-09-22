@@ -123,10 +123,15 @@ export default function HomePage() {
               transition={{ duration: 0.6 }}
               className="flex items-center"
             >
-              <h1 className={`font-heading text-2xl font-bold ${
+              <h1 className={`font-heading text-lg font-black tracking-tight ${
                 isDarkMode ? 'text-primary' : 'text-primary'
               }`}>
-                Escape by Brewklyn
+                ESCAPE
+                <span className={`block text-xs font-medium tracking-widest ${
+                  isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                }`}>
+                  BY BREWKLYN
+                </span>
               </h1>
             </motion.div>
 
