@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -23,11 +23,14 @@ import {
   Star,
   Users,
   Music,
-  Sparkles
+  Sparkles,
+  Menu,
+  X
 } from 'lucide-react';
 
 export default function HomePage() {
   const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [signatureBrews, setSignatureBrews] = useState<SignatureBrews[]>([]);
   const [events, setEvents] = useState<Events[]>([]);
   const [formData, setFormData] = useState({
@@ -70,6 +73,18 @@ export default function HomePage() {
     setIsDarkMode(!isDarkMode);
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
@@ -81,24 +96,168 @@ export default function HomePage() {
     ? 'bg-background text-foreground' 
     : 'bg-white text-gray-900';
 
+  const navigationItems = [
+    { label: 'Home', href: '#hero' },
+    { label: 'About', href: '#about' },
+    { label: 'Brews', href: '#brews' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Events', href: '#events' },
+    { label: 'Contact', href: '#contact' }
+  ];
+
   return (
     <div className={`min-h-screen ${themeClasses} transition-colors duration-500`}>
-      {/* Theme Toggle */}
-      <motion.button
-        onClick={toggleTheme}
-        className={`fixed top-8 right-8 z-50 p-3 rounded-full ${
-          isDarkMode 
-            ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/25' 
-            : 'bg-gray-900 text-white shadow-lg'
-        } transition-all duration-300 hover:scale-110`}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        {isDarkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
-      </motion.button>
+      {/* Navigation Bar */}
+      <nav className={`fixed top-0 left-0 right-0 z-50 ${
+        isDarkMode 
+          ? 'bg-background/95 backdrop-blur-md border-b border-gray-800' 
+          : 'bg-white/95 backdrop-blur-md border-b border-gray-200'
+      } transition-all duration-300`}>
+        <div className="max-w-[120rem] mx-auto px-8">
+          <div className="flex items-center justify-between h-20">
+            {/* Logo */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="flex items-center"
+            >
+              <h1 className={`font-heading text-2xl font-bold ${
+                isDarkMode ? 'text-primary' : 'text-primary'
+              }`}>
+                Escape by Brewklyn
+              </h1>
+            </motion.div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-8">
+              {navigationItems.map((item, index) => (
+                <motion.button
+                  key={item.label}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  onClick={() => scrollToSection(item.href.substring(1))}
+                  className={`font-paragraph text-sm font-medium transition-colors duration-300 hover:text-primary ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-700'
+                  }`}
+                >
+                  {item.label}
+                </motion.button>
+              ))}
+            </div>
+
+            {/* Desktop Theme Toggle & CTA */}
+            <div className="hidden md:flex items-center space-x-4">
+              <motion.button
+                onClick={toggleTheme}
+                className={`p-2 rounded-full ${
+                  isDarkMode 
+                    ? 'bg-secondary text-primary hover:bg-primary hover:text-primary-foreground' 
+                    : 'bg-gray-100 text-gray-700 hover:bg-primary hover:text-primary-foreground'
+                } transition-all duration-300`}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              </motion.button>
+              
+              <Button
+                onClick={() => scrollToSection('contact')}
+                className={`${
+                  isDarkMode 
+                    ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
+                    : 'bg-primary hover:bg-primary/90 text-primary-foreground'
+                } transition-all duration-300`}
+              >
+                Reserve Now
+              </Button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center space-x-3">
+              <motion.button
+                onClick={toggleTheme}
+                className={`p-2 rounded-full ${
+                  isDarkMode 
+                    ? 'bg-secondary text-primary' 
+                    : 'bg-gray-100 text-gray-700'
+                } transition-all duration-300`}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              </motion.button>
+              
+              <motion.button
+                onClick={toggleMobileMenu}
+                className={`p-2 rounded-lg ${
+                  isDarkMode 
+                    ? 'bg-secondary text-white hover:bg-primary' 
+                    : 'bg-gray-100 text-gray-700 hover:bg-primary hover:text-white'
+                } transition-all duration-300`}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </motion.button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Menu Dropdown */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              className={`md:hidden border-t ${
+                isDarkMode ? 'border-gray-800 bg-background' : 'border-gray-200 bg-white'
+              }`}
+            >
+              <div className="px-8 py-6 space-y-4">
+                {navigationItems.map((item, index) => (
+                  <motion.button
+                    key={item.label}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    onClick={() => scrollToSection(item.href.substring(1))}
+                    className={`block w-full text-left font-paragraph text-lg font-medium py-2 transition-colors duration-300 hover:text-primary ${
+                      isDarkMode ? 'text-gray-300' : 'text-gray-700'
+                    }`}
+                  >
+                    {item.label}
+                  </motion.button>
+                ))}
+                
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: navigationItems.length * 0.05 }}
+                  className="pt-4 border-t border-gray-600"
+                >
+                  <Button
+                    onClick={() => scrollToSection('contact')}
+                    className={`w-full ${
+                      isDarkMode 
+                        ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
+                        : 'bg-primary hover:bg-primary/90 text-primary-foreground'
+                    } transition-all duration-300`}
+                  >
+                    Reserve Now
+                  </Button>
+                </motion.div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen overflow-hidden">
+      <section id="hero" className="relative h-screen overflow-hidden pt-20">
         {/* Background Video Placeholder */}
         <div className="absolute inset-0">
           <Image
@@ -179,7 +338,7 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-      <section className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
+      <section id="about" className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
         <div className="max-w-[120rem] mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -261,7 +420,7 @@ export default function HomePage() {
       </section>
 
       {/* Signature Brews Section */}
-      <section className="py-24 px-8">
+      <section id="brews" className="py-24 px-8">
         <div className="max-w-[120rem] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -354,7 +513,7 @@ export default function HomePage() {
       </section>
 
       {/* Experience Section */}
-      <section className={`relative py-32 px-8 overflow-hidden ${
+      <section id="experience" className={`relative py-32 px-8 overflow-hidden ${
         isDarkMode ? 'bg-black' : 'bg-gray-900'
       }`}>
         {/* Parallax Background */}
@@ -453,7 +612,7 @@ export default function HomePage() {
       </section>
 
       {/* Events & Offers Section */}
-      <section className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
+      <section id="events" className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
         <div className="max-w-[120rem] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -577,7 +736,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact & Reservations Section */}
-      <section className="py-24 px-8">
+      <section id="contact" className="py-24 px-8">
         <div className="max-w-[120rem] mx-auto">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
