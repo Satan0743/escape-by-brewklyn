@@ -258,14 +258,67 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section id="hero" className="relative h-screen overflow-hidden pt-20">
-        {/* Background Video Placeholder */}
+        {/* Background Video Effect */}
         <div className="absolute inset-0">
-          <Image
-            src="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
-            alt="Craft beer pub atmosphere with neon lighting"
-            className="w-full h-full object-cover"
-            width={1920}
-          />
+          <motion.div
+            className="relative w-full h-full"
+            animate={{
+              scale: [1, 1.05, 1],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          >
+            <Image
+              src="https://static.wixstatic.com/media/4d5d5f_d331e9bbf1104862a432bb067ec17970~mv2.png?originWidth=1920&originHeight=1024"
+              alt="Cinematic brewery atmosphere with warm lighting and craft beer taps"
+              className="w-full h-full object-cover"
+              width={1920}
+            />
+            
+            {/* Animated overlay effects to simulate video movement */}
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent"
+              animate={{
+                x: ['-100%', '100%'],
+                opacity: [0, 0.3, 0]
+              }}
+              transition={{
+                duration: 8,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            />
+            
+            {/* Floating particles effect */}
+            <div className="absolute inset-0">
+              {[...Array(6)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  className={`absolute w-2 h-2 rounded-full ${
+                    isDarkMode ? 'bg-primary/20' : 'bg-primary/30'
+                  }`}
+                  style={{
+                    left: `${20 + i * 15}%`,
+                    top: `${30 + i * 10}%`,
+                  }}
+                  animate={{
+                    y: [-20, -100, -20],
+                    opacity: [0, 1, 0],
+                    scale: [0.5, 1, 0.5]
+                  }}
+                  transition={{
+                    duration: 6 + i,
+                    repeat: Infinity,
+                    delay: i * 2,
+                    ease: "easeInOut"
+                  }}
+                />
+              ))}
+            </div>
+          </motion.div>
         </div>
         
         {/* Overlay */}
