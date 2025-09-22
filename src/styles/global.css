@@ -3,3 +3,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom gradient for radial effect */
+@layer utilities {
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+}
+
+/* Dark mode styles */
+.dark {
+  color-scheme: dark;
+}
+
+/* Custom glow effects for dark mode */
+@layer components {
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(190, 149, 255, 0.3);
+  }
+  
+  .glow-primary-strong {
+    box-shadow: 0 0 30px rgba(190, 149, 255, 0.6);
+  }
+}
