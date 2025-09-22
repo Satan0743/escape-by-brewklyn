@@ -286,12 +286,7 @@ export default function HomePage() {
             <h1 className={`font-heading text-7xl md:text-8xl lg:text-9xl font-black mb-6 ${
               isDarkMode ? 'text-white' : 'text-gray-900'
             }`}>
-              Escape Into Flavor,{' '}
-              <span className={`${isDarkMode ? 'text-primary' : 'text-primary'} ${
-                isDarkMode ? 'drop-shadow-[0_0_20px_rgba(190,149,255,0.5)]' : ''
-              }`}>
-                Escape by Brewklyn
-              </span>
+               Escape By Brewklyn
             </h1>
             
             <motion.p
