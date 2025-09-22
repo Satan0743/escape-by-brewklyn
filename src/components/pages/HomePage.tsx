@@ -126,12 +126,7 @@ export default function HomePage() {
               <h1 className={`font-heading text-lg font-black tracking-tight ${
                 isDarkMode ? 'text-primary' : 'text-primary'
               }`}>
-                ESCAPE
-                <span className={`block text-xs font-medium tracking-widest ${
-                  isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                }`}>
-                  BY BREWKLYN
-                </span>
+                ESCAPE BY BREWKLYN
               </h1>
             </motion.div>
 
