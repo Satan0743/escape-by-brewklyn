@@ -100,6 +100,7 @@ export default function HomePage() {
     { label: 'Home', href: '#hero' },
     { label: 'About', href: '#about' },
     { label: 'Brews', href: '#brews' },
+    { label: 'Menu', href: '#menu' },
     { label: 'Experience', href: '#experience' },
     { label: 'Events', href: '#events' },
     { label: 'Contact', href: '#contact' }
@@ -319,6 +320,7 @@ export default function HomePage() {
               <Button
                 variant="outline"
                 size="lg"
+                onClick={() => scrollToSection('menu')}
                 className={`px-8 py-4 text-lg font-semibold ${
                   isDarkMode 
                     ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground' 
@@ -504,6 +506,286 @@ export default function HomePage() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Menu Section */}
+      <section id="menu" className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
+        <div className="max-w-[120rem] mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className={`font-heading text-5xl md:text-6xl font-bold mb-6 ${
+              isDarkMode ? 'text-white' : 'text-gray-900'
+            }`}>
+              Our Menu
+            </h2>
+            <p className={`font-paragraph text-xl max-w-3xl mx-auto ${
+              isDarkMode ? 'text-gray-300' : 'text-gray-600'
+            }`}>
+              Discover our carefully curated selection of craft beers, artisanal bites, 
+              and signature dishes that perfectly complement your escape.
+            </p>
+          </motion.div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Craft Beers */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Card className={`h-full ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              }`}>
+                <CardContent className="p-8">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+                    isDarkMode ? 'bg-primary/20' : 'bg-primary/10'
+                  }`}>
+                    <span className={`text-2xl ${isDarkMode ? 'text-primary' : 'text-primary'}`}>🍺</span>
+                  </div>
+                  
+                  <h3 className={`font-heading text-2xl font-bold mb-4 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Craft Beers
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Brooklyn IPA
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Hoppy, citrusy, bold
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        $8
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Midnight Stout
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Rich, smooth, dark
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        $9
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Golden Wheat
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Light, crisp, refreshing
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        $7
+                      </span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Artisanal Bites */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Card className={`h-full ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              }`}>
+                <CardContent className="p-8">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+                    isDarkMode ? 'bg-primary/20' : 'bg-primary/10'
+                  }`}>
+                    <span className={`text-2xl ${isDarkMode ? 'text-primary' : 'text-primary'}`}>🍽️</span>
+                  </div>
+                  
+                  <h3 className={`font-heading text-2xl font-bold mb-4 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Artisanal Bites
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Craft Pretzel
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Beer cheese & mustard
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        $12
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Wings & Things
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Buffalo, BBQ, or dry rub
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        $16
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Loaded Nachos
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          House-made chips & toppings
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        $14
+                      </span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Signature Dishes */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <Card className={`h-full ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              }`}>
+                <CardContent className="p-8">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+                    isDarkMode ? 'bg-primary/20' : 'bg-primary/10'
+                  }`}>
+                    <span className={`text-2xl ${isDarkMode ? 'text-primary' : 'text-primary'}`}>🍔</span>
+                  </div>
+                  
+                  <h3 className={`font-heading text-2xl font-bold mb-4 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Signature Dishes
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Brewklyn Burger
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Beer-braised onions & cheese
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        $18
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Fish & Chips
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Beer-battered cod
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        $22
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          BBQ Ribs
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Stout-glazed, fall-off-bone
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        $26
+                      </span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-center mt-12"
+          >
+            <Button
+              size="lg"
+              className={`px-8 py-4 text-lg font-semibold ${
+                isDarkMode 
+                  ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
+                  : 'bg-primary hover:bg-primary/90 text-primary-foreground'
+              } transition-all duration-300`}
+            >
+              View Full Menu
+            </Button>
+          </motion.div>
         </div>
       </section>
 
