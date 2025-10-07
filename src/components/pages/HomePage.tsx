@@ -125,7 +125,7 @@ export default function HomePage() {
               className="flex items-center"
             >
               <Image
-                src="https://static.wixstatic.com/media/4d5d5f_741bc1ad406f404bb39fb03af96e8296~mv2.png?originWidth=192&originHeight=128"
+                src="https://static.wixstatic.com/media/4d5d5f_3242c608bf5748fcbd9ad43c3b8c9acd~mv2.jpeg"
                 alt="Escape by Brewklyn Logo"
                 className="h-12 w-auto"
                 width={200}

@@ -213,7 +213,7 @@ export default function MenuPage() {
             >
               <Link to="/" className="flex items-center">
                 <Image
-                  src="https://static.wixstatic.com/media/4d5d5f_418c54ed81d84b03b31feb53437211d3~mv2.png?originWidth=192&originHeight=128"
+                  src="https://static.wixstatic.com/media/4d5d5f_3242c608bf5748fcbd9ad43c3b8c9acd~mv2.jpeg"
                   alt="Escape by Brewklyn Logo"
                   className="h-12 w-auto"
                   width={200}
