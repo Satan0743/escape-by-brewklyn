@@ -57,7 +57,7 @@ export default function MenuPage() {
 
   const menuCategories = [
     { id: 'all', label: 'All Items' },
-    { id: 'beers', label: 'Craft Beers' },
+    { id: 'beers', label: 'Liquor' },
     { id: 'appetizers', label: 'Appetizers' },
     { id: 'mains', label: 'Main Dishes' },
     { id: 'desserts', label: 'Desserts' }
