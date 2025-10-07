@@ -61,7 +61,7 @@ export default function MenuPage() {
     { id: 'appetizers', label: 'Appetizers' },
     { id: 'mains', label: 'Main Dishes' },
     { id: 'desserts', label: 'Desserts' }
-  ];
+  ].slice(0, 5); // Limit to 5 items
 
   const menuItems = [
     // Craft Beers
