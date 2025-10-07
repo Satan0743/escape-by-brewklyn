@@ -23,16 +23,16 @@ export default {
                 paragraph: "space grotesk"
             },
             colors: {
-                'light-violet': '#F0E6FF',
+                'light-orange': '#FFF4E6',
                 'dark-gray': '#282828',
                 destructive: '#FF4B4B',
                 'destructive-foreground': '#FFFFFF',
-                background: '#121212',
-                secondary: '#333333',
+                background: '#000000',
+                secondary: '#1a1a1a',
                 foreground: '#FFFFFF',
                 'secondary-foreground': '#FFFFFF',
-                'primary-foreground': '#FFFFFF',
-                primary: '#BE95FF'
+                'primary-foreground': '#000000',
+                primary: '#FF8C00'
             },
         },
     },

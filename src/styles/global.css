@@ -24,10 +24,10 @@ html {
 /* Custom glow effects for dark mode */
 @layer components {
   .glow-primary {
-    box-shadow: 0 0 20px rgba(190, 149, 255, 0.3);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
   }
   
   .glow-primary-strong {
-    box-shadow: 0 0 30px rgba(190, 149, 255, 0.6);
+    box-shadow: 0 0 30px rgba(255, 140, 0, 0.6);
   }
 }

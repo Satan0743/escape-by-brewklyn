@@ -44,12 +44,12 @@ export default function HomePage() {
     // Apply theme to document
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
-      document.body.style.backgroundColor = '#121212';
+      document.body.style.backgroundColor = '#000000';
       document.body.style.color = '#FFFFFF';
     } else {
       document.documentElement.classList.remove('dark');
       document.body.style.backgroundColor = '#FFFFFF';
-      document.body.style.color = '#121212';
+      document.body.style.color = '#000000';
     }
 
     // Fetch data
@@ -818,7 +818,7 @@ export default function HomePage() {
             <h2 className="font-heading text-6xl md:text-7xl font-black text-white mb-8">
               Not Just a Pub.{' '}
               <span className={`${isDarkMode ? 'text-primary' : 'text-primary'} ${
-                isDarkMode ? 'drop-shadow-[0_0_30px_rgba(190,149,255,0.8)]' : ''
+                isDarkMode ? 'drop-shadow-[0_0_30px_rgba(255,140,0,0.8)]' : ''
               }`}>
                 An Escape.
               </span>
