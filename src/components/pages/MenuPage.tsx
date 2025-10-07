@@ -211,10 +211,13 @@ export default function MenuPage() {
               transition={{ duration: 0.6 }}
               className="flex items-center"
             >
-              <Link to="/" className={`font-heading text-lg font-black tracking-tight ${
-                isDarkMode ? 'text-primary' : 'text-primary'
-              }`}>
-                ESCAPE BY BREWKLYN
+              <Link to="/" className="flex items-center">
+                <Image
+                  src="https://static.wixstatic.com/media/4d5d5f_418c54ed81d84b03b31feb53437211d3~mv2.png?originWidth=192&originHeight=128"
+                  alt="Escape by Brewklyn Logo"
+                  className="h-12 w-auto"
+                  width={200}
+                />
               </Link>
             </motion.div>
 

@@ -124,11 +124,12 @@ export default function HomePage() {
               transition={{ duration: 0.6 }}
               className="flex items-center"
             >
-              <h1 className={`font-heading text-lg font-black tracking-tight ${
-                isDarkMode ? 'text-primary' : 'text-primary'
-              }`}>
-                ESCAPE BY BREWKLYN
-              </h1>
+              <Image
+                src="https://static.wixstatic.com/media/4d5d5f_741bc1ad406f404bb39fb03af96e8296~mv2.png?originWidth=192&originHeight=128"
+                alt="Escape by Brewklyn Logo"
+                className="h-12 w-auto"
+                width={200}
+              />
             </motion.div>
 
             {/* Desktop Navigation */}
