@@ -190,8 +190,8 @@ export default function MenuPage() {
   ];
 
   const filteredItems = selectedCategory === 'all' 
-    ? menuItems 
-    : menuItems.filter(item => item.category === selectedCategory);
+    ? menuItems.slice(0, 5)
+    : menuItems.filter(item => item.category === selectedCategory).slice(0, 5);
 
   return (
     <div className={`min-h-screen ${themeClasses} transition-colors duration-500`}>
