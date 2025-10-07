@@ -71,7 +71,7 @@ export default function MenuPage() {
       category: 'beers',
       name: 'Brooklyn IPA',
       description: 'Hoppy, citrusy, bold with notes of grapefruit and pine',
-      price: '$8',
+      price: '₹660',
       image: 'https://static.wixstatic.com/media/4d5d5f_64c7dc92a6db4d168a86b39f7d8e6f83~mv2.png?originWidth=384&originHeight=256',
       featured: true,
       abv: '6.5%'
@@ -81,7 +81,7 @@ export default function MenuPage() {
       category: 'beers',
       name: 'Midnight Stout',
       description: 'Rich, smooth, dark with chocolate and coffee undertones',
-      price: '$9',
+      price: '₹745',
       image: 'https://static.wixstatic.com/media/4d5d5f_5606c39576bf4fe38be33c92f6fc4c21~mv2.png?originWidth=384&originHeight=256',
       abv: '7.2%'
     },
@@ -90,7 +90,7 @@ export default function MenuPage() {
       category: 'beers',
       name: 'Golden Wheat',
       description: 'Light, crisp, refreshing with citrus and wheat notes',
-      price: '$7',
+      price: '₹580',
       image: 'https://static.wixstatic.com/media/4d5d5f_1e869299fa854ebda562fa9f8c185eab~mv2.png?originWidth=384&originHeight=256',
       abv: '4.8%'
     },
@@ -99,7 +99,7 @@ export default function MenuPage() {
       category: 'beers',
       name: 'Escape Lager',
       description: 'Clean, balanced, smooth with a crisp finish',
-      price: '$7',
+      price: '₹580',
       image: 'https://static.wixstatic.com/media/4d5d5f_dab6a2d6cf81407f86cf460652d6bf69~mv2.png?originWidth=384&originHeight=256',
       abv: '5.0%'
     },
@@ -109,7 +109,7 @@ export default function MenuPage() {
       category: 'appetizers',
       name: 'Craft Pretzel',
       description: 'House-made pretzel with beer cheese and spicy mustard',
-      price: '$12',
+      price: '₹995',
       image: 'https://static.wixstatic.com/media/4d5d5f_480bc07023a54d9fbd447b18c37e2ba8~mv2.png?originWidth=384&originHeight=256',
       featured: true
     },
@@ -118,7 +118,7 @@ export default function MenuPage() {
       category: 'appetizers',
       name: 'Wings & Things',
       description: 'Choice of Buffalo, BBQ, or dry rub with celery and ranch',
-      price: '$16',
+      price: '₹1325',
       image: 'https://static.wixstatic.com/media/4d5d5f_fdce50afb4fc415d829134ddf6166a41~mv2.png?originWidth=384&originHeight=256'
     },
     {
@@ -126,7 +126,7 @@ export default function MenuPage() {
       category: 'appetizers',
       name: 'Loaded Nachos',
       description: 'House-made chips, cheese, jalapeños, sour cream, guac',
-      price: '$14',
+      price: '₹1160',
       image: 'https://static.wixstatic.com/media/4d5d5f_ee85ece9970d465387088e52d0dbb40e~mv2.png?originWidth=384&originHeight=256'
     },
     {
@@ -134,7 +134,7 @@ export default function MenuPage() {
       category: 'appetizers',
       name: 'Beer Battered Onion Rings',
       description: 'Crispy rings made with our signature beer batter',
-      price: '$10',
+      price: '₹830',
       image: 'https://static.wixstatic.com/media/4d5d5f_1b9540397aee40cdab6813008a98308d~mv2.png?originWidth=384&originHeight=256'
     },
     // Main Dishes
@@ -143,7 +143,7 @@ export default function MenuPage() {
       category: 'mains',
       name: 'Brewklyn Burger',
       description: 'Angus beef, beer-braised onions, aged cheddar, brioche bun',
-      price: '$18',
+      price: '₹1490',
       image: 'https://static.wixstatic.com/media/4d5d5f_89735e50b827433eae3e193894f25481~mv2.png?originWidth=384&originHeight=256',
       featured: true
     },
@@ -152,7 +152,7 @@ export default function MenuPage() {
       category: 'mains',
       name: 'Fish & Chips',
       description: 'Beer-battered cod, hand-cut fries, mushy peas, tartar sauce',
-      price: '$22',
+      price: '₹1820',
       image: 'https://static.wixstatic.com/media/4d5d5f_a032f82d73384e8c8a6982fdd28eedcf~mv2.png?originWidth=384&originHeight=256'
     },
     {
@@ -160,7 +160,7 @@ export default function MenuPage() {
       category: 'mains',
       name: 'BBQ Ribs',
       description: 'Stout-glazed baby back ribs, coleslaw, cornbread',
-      price: '$26',
+      price: '₹2150',
       image: 'https://static.wixstatic.com/media/4d5d5f_8dbc4a0a34e346b29d5e7ceab0d6e168~mv2.png?originWidth=384&originHeight=256'
     },
     {
@@ -168,7 +168,7 @@ export default function MenuPage() {
       category: 'mains',
       name: 'Craft Mac & Cheese',
       description: 'Three-cheese blend, beer reduction, crispy breadcrumbs',
-      price: '$16',
+      price: '₹1325',
       image: 'https://static.wixstatic.com/media/4d5d5f_c882218282194c77aa224603058089f5~mv2.png?originWidth=384&originHeight=256'
     },
     // Desserts
@@ -177,7 +177,7 @@ export default function MenuPage() {
       category: 'desserts',
       name: 'Stout Brownie',
       description: 'Rich chocolate brownie made with our midnight stout',
-      price: '$8',
+      price: '₹660',
       image: 'https://static.wixstatic.com/media/4d5d5f_9e9b2c4fb7494b0892087bc7d87bc222~mv2.png?originWidth=384&originHeight=256'
     },
     {
@@ -185,7 +185,7 @@ export default function MenuPage() {
       category: 'desserts',
       name: 'Beer Float',
       description: 'Vanilla ice cream with your choice of beer',
-      price: '$10',
+      price: '₹830',
       image: 'https://static.wixstatic.com/media/4d5d5f_4700c4320a134a36b9cb52ca1a505da6~mv2.png?originWidth=384&originHeight=256'
     }
   ];

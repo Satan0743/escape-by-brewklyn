@@ -570,7 +570,7 @@ export default function HomePage() {
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        $8
+                        ₹660
                       </span>
                     </div>
                     
@@ -586,7 +586,7 @@ export default function HomePage() {
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        $9
+                        ₹745
                       </span>
                     </div>
                     
@@ -602,7 +602,7 @@ export default function HomePage() {
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        $7
+                        ₹580
                       </span>
                     </div>
                   </div>
@@ -648,7 +648,7 @@ export default function HomePage() {
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        $12
+                        ₹995
                       </span>
                     </div>
                     
@@ -664,7 +664,7 @@ export default function HomePage() {
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        $16
+                        ₹1325
                       </span>
                     </div>
                     
@@ -680,7 +680,7 @@ export default function HomePage() {
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        $14
+                        ₹1160
                       </span>
                     </div>
                   </div>
@@ -726,7 +726,7 @@ export default function HomePage() {
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        $18
+                        ₹1490
                       </span>
                     </div>
                     
@@ -742,7 +742,7 @@ export default function HomePage() {
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        $22
+                        ₹1820
                       </span>
                     </div>
                     
@@ -758,7 +758,7 @@ export default function HomePage() {
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        $26
+                        ₹2150
                       </span>
                     </div>
                   </div>
