@@ -326,7 +326,7 @@ export default function HomePage() {
                     : 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
                 } transition-all duration-300`}
               >
-                <Link to="/menu" className="block w-full h-full">
+                <Link to="/menu" className="flex items-center justify-center w-full h-full">
                   View Menu
                 </Link>
               </Button>
