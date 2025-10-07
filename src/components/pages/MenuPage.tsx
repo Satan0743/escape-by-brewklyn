@@ -320,6 +320,14 @@ export default function MenuPage() {
             className="w-full h-full object-cover"
             width={1920}
           />
+          {/* Appetizers Label */}
+          <div className={`absolute top-8 left-8 px-4 py-2 rounded-lg ${
+            isDarkMode 
+              ? 'bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
+              : 'bg-primary/90 text-primary-foreground'
+          } backdrop-blur-sm`}>
+            <span className="font-heading text-lg font-bold">Appetizers</span>
+          </div>
         </div>
         
         <div className={`absolute inset-0 ${
