@@ -361,7 +361,7 @@ export default function MenuPage() {
       {/* Menu Categories */}
       <section className="py-12 px-8">
         <div className="max-w-[120rem] mx-auto">
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-4 mb-12 max-w-5xl mx-auto">
             {menuCategories.map((category, index) => (
               <motion.button
                 key={category.id}
