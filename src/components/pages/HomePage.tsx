@@ -256,7 +256,6 @@ export default function HomePage() {
           )}
         </AnimatePresence>
       </nav>
-
       {/* Hero Section */}
       <section id="hero" className="relative h-screen overflow-hidden pt-20">
         {/* Background Video Placeholder */}
@@ -277,14 +276,14 @@ export default function HomePage() {
         }`} />
         
         {/* Content */}
-        <div className="absolute inset-0 flex items-center justify-center text-center px-8">
+        <div className="absolute inset-0 flex items-center justify-center text-center p-[0px]">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-4xl"
           >
-            <h1 className={`font-heading text-7xl md:text-8xl lg:text-9xl font-black mb-6 ${
+            <h1 className={`font-paragraph text-7xl md:text-8xl lg:text-9xl font-black mb-6 tracking-wider ${
               isDarkMode ? 'text-white' : 'text-gray-900'
             }`}>
                Escape By Brewklyn
@@ -333,7 +332,6 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* About Section */}
       <section id="about" className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
         <div className="max-w-[120rem] mx-auto">
@@ -415,7 +413,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Signature Brews Section */}
       <section id="brews" className="py-24 px-8">
         <div className="max-w-[120rem] mx-auto">
@@ -508,7 +505,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Menu Section */}
       <section id="menu" className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
         <div className="max-w-[120rem] mx-auto">
@@ -788,7 +784,6 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* Experience Section */}
       <section id="experience" className={`relative py-32 px-8 overflow-hidden ${
         isDarkMode ? 'bg-black' : 'bg-gray-900'
@@ -887,7 +882,6 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* Events & Offers Section */}
       <section id="events" className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
         <div className="max-w-[120rem] mx-auto">
@@ -1011,7 +1005,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Contact & Reservations Section */}
       <section id="contact" className="py-24 px-8">
         <div className="max-w-[120rem] mx-auto">
@@ -1224,7 +1217,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className={`py-16 px-8 ${
         isDarkMode ? 'bg-black border-t border-gray-800' : 'bg-gray-900'
