@@ -9,6 +9,7 @@ import { Image } from '@/components/ui/image';
 import { BaseCrudService } from '@/integrations';
 import { SignatureBrews } from '@/entities/signaturebrews';
 import { Events } from '@/entities/events';
+import { Link } from 'react-router-dom';
 import { 
   Moon, 
   Sun, 
@@ -319,14 +320,15 @@ export default function HomePage() {
               <Button
                 variant="outline"
                 size="lg"
-                onClick={() => scrollToSection('menu')}
                 className={`px-8 py-4 text-lg font-semibold ${
                   isDarkMode 
                     ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground' 
                     : 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
                 } transition-all duration-300`}
               >
-                View Menu
+                <Link to="/menu" className="block w-full h-full">
+                  View Menu
+                </Link>
               </Button>
             </motion.div>
           </motion.div>

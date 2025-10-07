@@ -2,6 +2,7 @@ import { MemberProvider } from '@/integrations';
 import { createBrowserRouter, RouterProvider, Navigate, Outlet } from 'react-router-dom';
 import { ScrollToTop } from '@/lib/scroll-to-top';
 import HomePage from '@/components/pages/HomePage';
+import MenuPage from '@/components/pages/MenuPage';
 
 // Layout component that includes ScrollToTop
 function Layout() {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+      },
+      {
+        path: "menu",
+        element: <MenuPage />,
       },
       {
         path: "*",
