@@ -321,15 +321,14 @@ export default function HomePage() {
               <Button
                 variant="outline"
                 size="lg"
+                onClick={() => scrollToSection('menu')}
                 className={`px-8 py-4 text-lg font-semibold ${
                   isDarkMode 
                     ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground' 
                     : 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
                 } transition-all duration-300`}
               >
-                <Link to="/food-menu" className="flex items-center justify-center w-full h-full">
-                  View Menu
-                </Link>
+                View Menu
               </Button>
             </motion.div>
           </motion.div>
