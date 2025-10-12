@@ -321,15 +321,6 @@ export default function FoodMenuPage() {
     },
     // Brew Bites
     {
-      name: "Buffalo Wings",
-      description: "Crispy chicken wings tossed in spicy buffalo sauce",
-      price: "₹425",
-      category: "Brew Bites",
-      rating: 4.8,
-      prepTime: "12-15 min",
-      image: "https://static.wixstatic.com/media/4d5d5f_d4fa20bdeb674fa0a868abca33c9787a~mv2.png?originWidth=384&originHeight=256"
-    },
-    {
       name: "Beer Battered Fish & Chips",
       description: "Fresh fish in our signature beer batter with crispy fries",
       price: "₹485",
@@ -382,15 +373,6 @@ export default function FoodMenuPage() {
       rating: 4.8,
       prepTime: "5-7 min",
       image: "https://static.wixstatic.com/media/4d5d5f_86b035255fdb4f3da40bb5fada5e5e96~mv2.png?originWidth=384&originHeight=256"
-    },
-    {
-      name: "BBQ Pork Ribs",
-      description: "Tender pork ribs glazed with smoky BBQ sauce",
-      price: "₹565",
-      category: "Brew Bites",
-      rating: 4.9,
-      prepTime: "18-20 min",
-      image: "https://static.wixstatic.com/media/4d5d5f_b157497af3b14495a39fae97b0b2ef31~mv2.png?originWidth=384&originHeight=256"
     }
   ];
 
