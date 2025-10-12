@@ -219,6 +219,15 @@ export default function FoodMenuPage() {
       prepTime: "18-22 min",
       image: "https://static.wixstatic.com/media/4d5d5f_b670d52289aa4ccb939b16dc5d4198d8~mv2.png?originWidth=384&originHeight=256"
     },
+    {
+      name: "Hawaiian",
+      description: "Classic combination of ham, pineapple, and mozzarella",
+      price: "₹490",
+      category: "Pizza",
+      rating: 4.4,
+      prepTime: "16-20 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_e1a23007671848e993e7c9a95091da68~mv2.png?originWidth=384&originHeight=256"
+    },
     // Desserts
     {
       name: "Escape Tres Leches",
