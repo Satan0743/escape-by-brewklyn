@@ -291,6 +291,33 @@ export default function FoodMenuPage() {
       rating: 4.9,
       prepTime: "10-12 min",
       image: "https://static.wixstatic.com/media/4d5d5f_91f96a2e3df0444aafd4621941ea98bf~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
+      name: "Philadelphia Cheesecake",
+      description: "Classic New York style cheesecake with berry compote",
+      price: "₹340",
+      category: "Desserts",
+      rating: 4.8,
+      prepTime: "5-8 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_7c3ddb311ce54e4e9601e3a98e07de6b~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
+      name: "Coorgi Coffee Brûlée",
+      description: "Traditional crème brûlée infused with aromatic Coorgi coffee",
+      price: "₹340",
+      category: "Desserts",
+      rating: 4.7,
+      prepTime: "8-10 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_aa566582d0aa40f390552977bcd8dcba~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
+      name: "Ice Cream",
+      description: "Premium vanilla ice cream with seasonal toppings",
+      price: "₹290",
+      category: "Desserts",
+      rating: 4.5,
+      prepTime: "3-5 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_d1d49ce403af4db59b519797e05b21ec~mv2.png?originWidth=384&originHeight=256"
     }
   ];
 
