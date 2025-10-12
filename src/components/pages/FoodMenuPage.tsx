@@ -155,6 +155,15 @@ export default function FoodMenuPage() {
       prepTime: "15-20 min",
       image: "https://static.wixstatic.com/media/4d5d5f_7e8f375c8d55431095b8a8182073b1b6~mv2.png?originWidth=384&originHeight=256"
     },
+    {
+      name: "Peri Peri Chicken Burger",
+      description: "Spicy peri peri chicken with fresh lettuce and tomato",
+      price: "₹390",
+      category: "Burgers",
+      rating: 4.6,
+      prepTime: "12-15 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_b47fce5b09a942b48f5fe31ba765766e~mv2.png?originWidth=384&originHeight=256"
+    },
     // Pizza
     {
       name: "Margherita",
