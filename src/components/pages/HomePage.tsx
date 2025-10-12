@@ -1359,7 +1359,7 @@ export default function HomePage() {
             isDarkMode ? 'border-gray-800' : 'border-gray-700'
           } flex flex-col md:flex-row justify-between items-center`}>
             <p className="font-paragraph text-gray-400 text-sm">
-              © 2024 Escape by Brewklyn. All rights reserved.
+              © 2025 Escape by Brewklyn. All rights reserved.
             </p>
             <p className="font-paragraph text-gray-400 text-sm mt-2 md:mt-0">
               Crafted with passion in Brooklyn
