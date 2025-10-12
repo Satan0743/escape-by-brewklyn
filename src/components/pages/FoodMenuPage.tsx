@@ -318,10 +318,83 @@ export default function FoodMenuPage() {
       rating: 4.5,
       prepTime: "3-5 min",
       image: "https://static.wixstatic.com/media/4d5d5f_d1d49ce403af4db59b519797e05b21ec~mv2.png?originWidth=384&originHeight=256"
+    },
+    // Brew Bites
+    {
+      name: "Buffalo Wings",
+      description: "Crispy chicken wings tossed in spicy buffalo sauce",
+      price: "₹425",
+      category: "Brew Bites",
+      rating: 4.8,
+      prepTime: "12-15 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_d4fa20bdeb674fa0a868abca33c9787a~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
+      name: "Beer Battered Fish & Chips",
+      description: "Fresh fish in our signature beer batter with crispy fries",
+      price: "₹485",
+      category: "Brew Bites",
+      rating: 4.7,
+      prepTime: "15-18 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_7fcb9c5c17b14494b91fa663cb33d985~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
+      name: "Loaded Nachos",
+      description: "Crispy tortilla chips with cheese, jalapeños, and sour cream",
+      price: "₹365",
+      category: "Brew Bites",
+      rating: 4.6,
+      prepTime: "8-10 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_50990c3e6bb446638850ac6614f169e9~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
+      name: "Craft Beer Sliders",
+      description: "Mini beef sliders with beer-infused sauce and pickles",
+      price: "₹445",
+      category: "Brew Bites",
+      rating: 4.9,
+      prepTime: "12-15 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_2763340a70ab41ae8fe51945cfd9d702~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
+      name: "Pretzel Bites",
+      description: "Warm soft pretzel bites with beer cheese dip",
+      price: "₹295",
+      category: "Brew Bites",
+      rating: 4.5,
+      prepTime: "6-8 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_f54ab8b106044c34b1a239f9c3a18da9~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
+      name: "Spicy Jalapeño Poppers",
+      description: "Cream cheese stuffed jalapeños wrapped in bacon",
+      price: "₹385",
+      category: "Brew Bites",
+      rating: 4.7,
+      prepTime: "10-12 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_b183a557bb554e5197017ef8ece72afe~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
+      name: "Craft Cheese Board",
+      description: "Selection of artisanal cheeses with crackers and nuts",
+      price: "₹525",
+      category: "Brew Bites",
+      rating: 4.8,
+      prepTime: "5-7 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_86b035255fdb4f3da40bb5fada5e5e96~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
+      name: "BBQ Pork Ribs",
+      description: "Tender pork ribs glazed with smoky BBQ sauce",
+      price: "₹565",
+      category: "Brew Bites",
+      rating: 4.9,
+      prepTime: "18-20 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_b157497af3b14495a39fae97b0b2ef31~mv2.png?originWidth=384&originHeight=256"
     }
   ];
 
-  const categories = ["All", "Main Course", "Burgers", "Pizza", "Desserts"];
+  const categories = ["All", "Main Course", "Burgers", "Pizza", "Desserts", "Brew Bites"];
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredItems = selectedCategory === "All" 
