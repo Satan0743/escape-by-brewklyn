@@ -526,13 +526,13 @@ export default function HomePage() {
             <p className={`font-paragraph text-xl max-w-3xl mx-auto ${
               isDarkMode ? 'text-gray-300' : 'text-gray-600'
             }`}>
-              Discover our carefully curated selection of craft beers, artisanal bites, 
-              and signature dishes that perfectly complement your escape.
+              Discover our carefully curated selection of main courses, burgers, pizzas, 
+              and desserts that perfectly complement your escape.
             </p>
           </motion.div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Craft Beers */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Main Course */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -548,13 +548,13 @@ export default function HomePage() {
                   <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
                     isDarkMode ? 'bg-primary/20' : 'bg-primary/10'
                   }`}>
-                    <span className={`text-2xl ${isDarkMode ? 'text-primary' : 'text-primary'}`}>🍺</span>
+                    <span className={`text-2xl ${isDarkMode ? 'text-primary' : 'text-primary'}`}>🍛</span>
                   </div>
                   
                   <h3 className={`font-heading text-2xl font-bold mb-4 ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
                   }`}>
-                    Craft Beers
+                    Main Course
                   </h3>
                   
                   <div className="space-y-4">
@@ -563,14 +563,14 @@ export default function HomePage() {
                         <h4 className={`font-heading text-lg font-semibold ${
                           isDarkMode ? 'text-white' : 'text-gray-900'
                         }`}>
-                          Brooklyn IPA
+                          Paneer Tikka Masala
                         </h4>
                         <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Hoppy, citrusy, bold
+                          Rich & creamy tomato gravy
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹660
+                        ₹395
                       </span>
                     </div>
                     
@@ -579,14 +579,14 @@ export default function HomePage() {
                         <h4 className={`font-heading text-lg font-semibold ${
                           isDarkMode ? 'text-white' : 'text-gray-900'
                         }`}>
-                          Midnight Stout
+                          Chicken Tikka Masala
                         </h4>
                         <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Rich, smooth, dark
+                          Tender chicken in spiced gravy
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹745
+                        ₹450
                       </span>
                     </div>
                     
@@ -595,14 +595,14 @@ export default function HomePage() {
                         <h4 className={`font-heading text-lg font-semibold ${
                           isDarkMode ? 'text-white' : 'text-gray-900'
                         }`}>
-                          Golden Wheat
+                          Mutton Rogan Josh
                         </h4>
                         <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Light, crisp, refreshing
+                          Aromatic Kashmiri specialty
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹580
+                        ₹520
                       </span>
                     </div>
                   </div>
@@ -610,89 +610,11 @@ export default function HomePage() {
               </Card>
             </motion.div>
 
-            {/* Artisanal Bites */}
+            {/* Burgers */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <Card className={`h-full ${
-                isDarkMode 
-                  ? 'bg-background border-gray-700' 
-                  : 'bg-white border-gray-200'
-              }`}>
-                <CardContent className="p-8">
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
-                    isDarkMode ? 'bg-primary/20' : 'bg-primary/10'
-                  }`}>
-                    <span className={`text-2xl ${isDarkMode ? 'text-primary' : 'text-primary'}`}>🍽️</span>
-                  </div>
-                  
-                  <h3 className={`font-heading text-2xl font-bold mb-4 ${
-                    isDarkMode ? 'text-white' : 'text-gray-900'
-                  }`}>
-                    Artisanal Bites
-                  </h3>
-                  
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Craft Pretzel
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Beer cheese & mustard
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹995
-                      </span>
-                    </div>
-                    
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Wings & Things
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Buffalo, BBQ, or dry rub
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹1325
-                      </span>
-                    </div>
-                    
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Loaded Nachos
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          House-made chips & toppings
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹1160
-                      </span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Signature Dishes */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
               <Card className={`h-full ${
@@ -710,7 +632,7 @@ export default function HomePage() {
                   <h3 className={`font-heading text-2xl font-bold mb-4 ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
                   }`}>
-                    Signature Dishes
+                    Burgers
                   </h3>
                   
                   <div className="space-y-4">
@@ -719,14 +641,14 @@ export default function HomePage() {
                         <h4 className={`font-heading text-lg font-semibold ${
                           isDarkMode ? 'text-white' : 'text-gray-900'
                         }`}>
-                          Brewklyn Burger
+                          Classic Veg
                         </h4>
                         <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Beer-braised onions & cheese
+                          Fresh veggies & cheese
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹1490
+                        ₹365
                       </span>
                     </div>
                     
@@ -735,14 +657,14 @@ export default function HomePage() {
                         <h4 className={`font-heading text-lg font-semibold ${
                           isDarkMode ? 'text-white' : 'text-gray-900'
                         }`}>
-                          Fish & Chips
+                          Two Cheese Burger
                         </h4>
                         <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Beer-battered cod
+                          Double cheese delight
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹1820
+                        ₹375
                       </span>
                     </div>
                     
@@ -751,14 +673,170 @@ export default function HomePage() {
                         <h4 className={`font-heading text-lg font-semibold ${
                           isDarkMode ? 'text-white' : 'text-gray-900'
                         }`}>
-                          BBQ Ribs
+                          Lamb Burger
                         </h4>
                         <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Stout-glazed, fall-off-bone
+                          Juicy lamb patty
                         </p>
                       </div>
                       <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹2150
+                        ₹445
+                      </span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Pizza */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <Card className={`h-full ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              }`}>
+                <CardContent className="p-8">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+                    isDarkMode ? 'bg-primary/20' : 'bg-primary/10'
+                  }`}>
+                    <span className={`text-2xl ${isDarkMode ? 'text-primary' : 'text-primary'}`}>🍕</span>
+                  </div>
+                  
+                  <h3 className={`font-heading text-2xl font-bold mb-4 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Pizza
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Margherita
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Classic tomato & mozzarella
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        ₹495
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Escape House
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Signature house special
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        ₹525
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Paneer Tikka Pizza
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Indian fusion delight
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        ₹595
+                      </span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Desserts */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <Card className={`h-full ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              }`}>
+                <CardContent className="p-8">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+                    isDarkMode ? 'bg-primary/20' : 'bg-primary/10'
+                  }`}>
+                    <span className={`text-2xl ${isDarkMode ? 'text-primary' : 'text-primary'}`}>🍰</span>
+                  </div>
+                  
+                  <h3 className={`font-heading text-2xl font-bold mb-4 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Desserts
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Escape Tres Leches
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Three milk cake delight
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        ₹310
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Apple Crumble
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          With vanilla ice cream
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        ₹340
+                      </span>
+                    </div>
+                    
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className={`font-heading text-lg font-semibold ${
+                          isDarkMode ? 'text-white' : 'text-gray-900'
+                        }`}>
+                          Salted Caramel Brownie
+                        </h4>
+                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                          Rich & indulgent
+                        </p>
+                      </div>
+                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
+                        ₹335
                       </span>
                     </div>
                   </div>
@@ -770,20 +848,22 @@ export default function HomePage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <Button
-              size="lg"
-              className={`px-8 py-4 text-lg font-semibold ${
-                isDarkMode 
-                  ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
-                  : 'bg-primary hover:bg-primary/90 text-primary-foreground'
-              } transition-all duration-300`}
-            >
-              View Full Menu
-            </Button>
+            <Link to="/menu">
+              <Button
+                size="lg"
+                className={`px-8 py-4 text-lg font-semibold ${
+                  isDarkMode 
+                    ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
+                    : 'bg-primary hover:bg-primary/90 text-primary-foreground'
+                } transition-all duration-300`}
+              >
+                View Full Menu
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>
