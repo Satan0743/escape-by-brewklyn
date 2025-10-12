@@ -499,7 +499,7 @@ export default function HomePage() {
                           : 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
                       } transition-all duration-300`}
                     >
-                      See More
+                      View Full Brew
                     </Button>
                   </CardContent>
                 </Card>
