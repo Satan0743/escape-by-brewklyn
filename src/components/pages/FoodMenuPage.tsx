@@ -164,6 +164,15 @@ export default function FoodMenuPage() {
       prepTime: "12-15 min",
       image: "https://static.wixstatic.com/media/4d5d5f_b47fce5b09a942b48f5fe31ba765766e~mv2.png?originWidth=384&originHeight=256"
     },
+    {
+      name: "Escape Chicken Burger",
+      description: "Signature chicken burger with our special escape sauce",
+      price: "₹380",
+      category: "Burgers",
+      rating: 4.7,
+      prepTime: "12-15 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_37bac7c617364090a96b3a81f6715efd~mv2.png?originWidth=384&originHeight=256"
+    },
     // Pizza
     {
       name: "Margherita",
