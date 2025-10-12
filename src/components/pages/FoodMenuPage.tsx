@@ -228,6 +228,15 @@ export default function FoodMenuPage() {
       prepTime: "16-20 min",
       image: "https://static.wixstatic.com/media/4d5d5f_e1a23007671848e993e7c9a95091da68~mv2.png?originWidth=384&originHeight=256"
     },
+    {
+      name: "Thai Ground Chicken",
+      description: "Spicy Thai-style ground chicken with fresh herbs and chili",
+      price: "₹580",
+      category: "Pizza",
+      rating: 4.6,
+      prepTime: "18-22 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_f31a9b5e32854dfe9d024ae3b4501a2f~mv2.png?originWidth=384&originHeight=256"
+    },
     // Desserts
     {
       name: "Escape Tres Leches",
