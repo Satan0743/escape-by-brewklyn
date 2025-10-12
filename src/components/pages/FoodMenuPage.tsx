@@ -237,6 +237,15 @@ export default function FoodMenuPage() {
       prepTime: "18-22 min",
       image: "https://static.wixstatic.com/media/4d5d5f_f31a9b5e32854dfe9d024ae3b4501a2f~mv2.png?originWidth=384&originHeight=256"
     },
+    {
+      name: "BBQ Chicken",
+      description: "Smoky BBQ sauce with tender chicken and red onions",
+      price: "₹590",
+      category: "Pizza",
+      rating: 4.7,
+      prepTime: "18-22 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_06e8f478474145fd85938ae030f97eb8~mv2.png?originWidth=384&originHeight=256"
+    },
     // Desserts
     {
       name: "Escape Tres Leches",
