@@ -327,7 +327,7 @@ export default function HomePage() {
                     : 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
                 } transition-all duration-300`}
               >
-                <Link to="/menu" className="flex items-center justify-center w-full h-full">
+                <Link to="/food-menu" className="flex items-center justify-center w-full h-full">
                   View Menu
                 </Link>
               </Button>
@@ -852,7 +852,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <Link to="/menu">
+            <Link to="/food-menu">
               <Button
                 size="lg"
                 className={`px-8 py-4 text-lg font-semibold ${
