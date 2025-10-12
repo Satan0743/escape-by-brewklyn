@@ -440,7 +440,7 @@ export default function MenuPage() {
                       <h3 className={`font-heading text-xl font-bold ${
                         isDarkMode ? 'text-white' : 'text-gray-900'
                       }`}>
-                        Appetizers
+                        Main Course
                       </h3>
                       <span className={`font-heading text-xl font-bold ${
                         isDarkMode ? 'text-primary' : 'text-primary'
