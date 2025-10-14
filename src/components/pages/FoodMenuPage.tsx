@@ -418,29 +418,8 @@ export default function FoodMenuPage() {
               />
             </div>
 
-            {/* Cart & Theme Toggle */}
+            {/* Theme Toggle */}
             <div className="flex items-center gap-4">
-              {/* Cart Button */}
-              <Button
-                variant="outline"
-                size="sm"
-                className={`relative ${
-                  isDarkMode 
-                    ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground' 
-                    : 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
-                } transition-all duration-300`}
-              >
-                <ShoppingCart className="w-4 h-4 mr-2" />
-                Cart
-                {Object.values(cart).reduce((sum, qty) => sum + qty, 0) > 0 && (
-                  <span className={`absolute -top-2 -right-2 w-5 h-5 rounded-full text-xs flex items-center justify-center ${
-                    isDarkMode ? 'bg-primary text-primary-foreground' : 'bg-primary text-primary-foreground'
-                  }`}>
-                    {Object.values(cart).reduce((sum, qty) => sum + qty, 0)}
-                  </span>
-                )}
-              </Button>
-
               {/* Theme Toggle */}
               <motion.button
                 onClick={toggleTheme}
