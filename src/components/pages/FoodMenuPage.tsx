@@ -613,10 +613,8 @@ export default function FoodMenuPage() {
                     ) : (
                       <Button
                         onClick={() => addToCart(item.name)}
-                        className={`w-full ${
-                          isDarkMode 
-                            ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
-                            : 'bg-primary hover:bg-primary/90 text-primary-foreground'
+                        className={`w-full bg-gradient-gold hover:opacity-90 text-black ${
+                          isDarkMode ? 'glow-gold' : ''
                         } transition-all duration-300`}
                         size="sm"
                       >
@@ -652,10 +650,8 @@ export default function FoodMenuPage() {
             
             <Button
               size="lg"
-              className={`${
-                isDarkMode 
-                  ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
-                  : 'bg-primary hover:bg-primary/90 text-primary-foreground'
+              className={`bg-gradient-gold hover:opacity-90 text-black ${
+                isDarkMode ? 'glow-gold' : ''
               } transition-all duration-300`}
             >
               Proceed to Checkout
@@ -693,10 +689,8 @@ export default function FoodMenuPage() {
               <Link to="/#contact">
                 <Button
                   size="lg"
-                  className={`px-8 py-4 text-lg font-semibold ${
-                    isDarkMode 
-                      ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
-                      : 'bg-primary hover:bg-primary/90 text-primary-foreground'
+                  className={`px-8 py-4 text-lg font-semibold bg-gradient-gold hover:opacity-90 text-black ${
+                    isDarkMode ? 'glow-gold' : ''
                   } transition-all duration-300`}
                 >
                   Reserve a Table
@@ -708,8 +702,8 @@ export default function FoodMenuPage() {
                   size="lg"
                   className={`px-8 py-4 text-lg font-semibold ${
                     isDarkMode 
-                      ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground' 
-                      : 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
+                      ? 'border-primary text-primary hover:bg-gradient-gold hover:text-black hover:border-transparent' 
+                      : 'border-gray-900 text-gray-900 hover:bg-gradient-gold hover:text-black hover:border-transparent'
                   } transition-all duration-300`}
                 >
                   Back to Home

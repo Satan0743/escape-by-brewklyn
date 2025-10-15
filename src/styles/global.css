@@ -14,6 +14,25 @@ html {
   .bg-gradient-radial {
     background: radial-gradient(circle, var(--tw-gradient-stops));
   }
+  
+  .bg-gradient-gold {
+    background: linear-gradient(135deg, #FFD700 0%, #FFB84D 100%);
+  }
+  
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #FFD700 0%, #FFB84D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-amber {
+    background: linear-gradient(135deg, #C47B00 0%, #FFB84D 100%);
+  }
+  
+  .bg-charcoal-sophisticated {
+    background: linear-gradient(135deg, #1C1C1C 0%, #282828 100%);
+  }
 }
 
 /* Dark mode styles */
@@ -24,10 +43,28 @@ html {
 /* Custom glow effects for dark mode */
 @layer components {
   .glow-primary {
-    box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
   }
   
   .glow-primary-strong {
-    box-shadow: 0 0 30px rgba(255, 140, 0, 0.6);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+  }
+  
+  .glow-gold {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4), 0 0 50px rgba(255, 184, 77, 0.2);
+  }
+  
+  .glow-amber {
+    box-shadow: 0 0 20px rgba(196, 123, 0, 0.4);
+  }
+  
+  .charcoal-card {
+    background: linear-gradient(135deg, #1C1C1C 0%, #2A2A2A 100%);
+    border: 1px solid rgba(196, 123, 0, 0.2);
+  }
+  
+  .beige-accent {
+    background: rgba(229, 214, 195, 0.1);
+    border: 1px solid rgba(229, 214, 195, 0.3);
   }
 }

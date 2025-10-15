@@ -23,8 +23,11 @@ export default {
                 paragraph: "space grotesk"
             },
             colors: {
-                'light-orange': '#FFF4E6',
+                'light-gold': '#FFF9E6',
                 'dark-gray': '#282828',
+                'charcoal-gray': '#1C1C1C',
+                'deep-amber': '#C47B00',
+                'cool-beige': '#E5D6C3',
                 destructive: '#FF4B4B',
                 'destructive-foreground': '#FFFFFF',
                 background: '#000000',
@@ -32,7 +35,9 @@ export default {
                 foreground: '#FFFFFF',
                 'secondary-foreground': '#FFFFFF',
                 'primary-foreground': '#000000',
-                primary: '#FF8C00'
+                primary: '#FFD700',
+                'primary-gradient-start': '#FFD700',
+                'primary-gradient-end': '#FFB84D'
             },
         },
     },
