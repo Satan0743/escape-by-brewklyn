@@ -269,7 +269,7 @@ export default function HomePage() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="https://static.wixstatic.com/media/4d5d5f_410f3acb7a65407abaf62667b190d501~mv2.png?originWidth=1920&originHeight=1024" type="video/mp4" />
+            <source src="https://static.wixstatic.com/media/4d5d5f_9d10d8bc89bf432986e4d25995bce652~mv2.png?id=brewery-background-video" type="video/mp4" />
             {/* Fallback image */}
             <Image
               src="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
