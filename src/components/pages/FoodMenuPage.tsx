@@ -494,7 +494,7 @@ export default function FoodMenuPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className={`font-heading text-6xl md:text-7xl font-bold mb-6 ${
+            <h1 className={`font-display text-6xl md:text-7xl font-bold mb-6 ${
               isDarkMode ? 'text-white' : 'text-gray-900'
             }`}>
               Food Menu

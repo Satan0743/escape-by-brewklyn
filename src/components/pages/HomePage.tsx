@@ -285,7 +285,7 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-4xl"
           >
-            <h1 className={`font-paragraph text-7xl md:text-8xl lg:text-9xl font-black mb-6 tracking-wider ${
+            <h1 className={`font-display text-7xl md:text-8xl lg:text-9xl font-black mb-6 tracking-wider ${
               isDarkMode ? 'text-white' : 'text-gray-900'
             }`}>
                Escape By Brewklyn

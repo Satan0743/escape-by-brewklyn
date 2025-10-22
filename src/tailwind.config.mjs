@@ -19,8 +19,9 @@ export default {
                 '9xl': ['8rem', { lineHeight: '1', letterSpacing: '-0.025em', fontWeight: '900' }],
             },
             fontFamily: {
-                heading: "syne",
-                paragraph: "space grotesk"
+                heading: ["Montserrat", "system-ui", "sans-serif"], // Modern Sans-Serif for headings
+                paragraph: ["Lato", "system-ui", "sans-serif"], // Clean Sans-Serif for body text
+                display: ["Bebas Neue", "Impact", "Arial Black", "sans-serif"] // Geometric Display for accents/taglines
             },
             colors: {
                 'light-orange': '#FFF4E6',
