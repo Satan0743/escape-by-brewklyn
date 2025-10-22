@@ -321,6 +321,15 @@ export default function FoodMenuPage() {
     },
     // Brew Bites
     {
+      name: "Buffalo Wings",
+      description: "Crispy chicken wings tossed in spicy buffalo sauce",
+      price: "₹425",
+      category: "Brew Bites",
+      rating: 4.8,
+      prepTime: "12-15 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_d4fa20bdeb674fa0a868abca33c9787a~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
       name: "Beer Battered Fish & Chips",
       description: "Fresh fish in our signature beer batter with crispy fries",
       price: "₹485",
@@ -373,6 +382,15 @@ export default function FoodMenuPage() {
       rating: 4.8,
       prepTime: "5-7 min",
       image: "https://static.wixstatic.com/media/4d5d5f_86b035255fdb4f3da40bb5fada5e5e96~mv2.png?originWidth=384&originHeight=256"
+    },
+    {
+      name: "BBQ Pork Ribs",
+      description: "Tender pork ribs glazed with smoky BBQ sauce",
+      price: "₹565",
+      category: "Brew Bites",
+      rating: 4.9,
+      prepTime: "18-20 min",
+      image: "https://static.wixstatic.com/media/4d5d5f_b157497af3b14495a39fae97b0b2ef31~mv2.png?originWidth=384&originHeight=256"
     }
   ];
 
@@ -418,8 +436,29 @@ export default function FoodMenuPage() {
               />
             </div>
 
-            {/* Theme Toggle */}
+            {/* Cart & Theme Toggle */}
             <div className="flex items-center gap-4">
+              {/* Cart Button */}
+              <Button
+                variant="outline"
+                size="sm"
+                className={`relative ${
+                  isDarkMode 
+                    ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground' 
+                    : 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
+                } transition-all duration-300`}
+              >
+                <ShoppingCart className="w-4 h-4 mr-2" />
+                Cart
+                {Object.values(cart).reduce((sum, qty) => sum + qty, 0) > 0 && (
+                  <span className={`absolute -top-2 -right-2 w-5 h-5 rounded-full text-xs flex items-center justify-center ${
+                    isDarkMode ? 'bg-primary text-primary-foreground' : 'bg-primary text-primary-foreground'
+                  }`}>
+                    {Object.values(cart).reduce((sum, qty) => sum + qty, 0)}
+                  </span>
+                )}
+              </Button>
+
               {/* Theme Toggle */}
               <motion.button
                 onClick={toggleTheme}
@@ -613,8 +652,10 @@ export default function FoodMenuPage() {
                     ) : (
                       <Button
                         onClick={() => addToCart(item.name)}
-                        className={`w-full bg-gradient-gold hover:opacity-90 text-black ${
-                          isDarkMode ? 'glow-gold' : ''
+                        className={`w-full ${
+                          isDarkMode 
+                            ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
+                            : 'bg-primary hover:bg-primary/90 text-primary-foreground'
                         } transition-all duration-300`}
                         size="sm"
                       >
@@ -650,8 +691,10 @@ export default function FoodMenuPage() {
             
             <Button
               size="lg"
-              className={`bg-gradient-gold hover:opacity-90 text-black ${
-                isDarkMode ? 'glow-gold' : ''
+              className={`${
+                isDarkMode 
+                  ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
+                  : 'bg-primary hover:bg-primary/90 text-primary-foreground'
               } transition-all duration-300`}
             >
               Proceed to Checkout
@@ -689,8 +732,10 @@ export default function FoodMenuPage() {
               <Link to="/#contact">
                 <Button
                   size="lg"
-                  className={`px-8 py-4 text-lg font-semibold bg-gradient-gold hover:opacity-90 text-black ${
-                    isDarkMode ? 'glow-gold' : ''
+                  className={`px-8 py-4 text-lg font-semibold ${
+                    isDarkMode 
+                      ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
+                      : 'bg-primary hover:bg-primary/90 text-primary-foreground'
                   } transition-all duration-300`}
                 >
                   Reserve a Table
@@ -702,8 +747,8 @@ export default function FoodMenuPage() {
                   size="lg"
                   className={`px-8 py-4 text-lg font-semibold ${
                     isDarkMode 
-                      ? 'border-primary text-primary hover:bg-gradient-gold hover:text-black hover:border-transparent' 
-                      : 'border-gray-900 text-gray-900 hover:bg-gradient-gold hover:text-black hover:border-transparent'
+                      ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground' 
+                      : 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
                   } transition-all duration-300`}
                 >
                   Back to Home

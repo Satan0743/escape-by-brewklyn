@@ -6,7 +6,7 @@ export default function ErrorPage() {
   const error = useRouteError() as Error;
 
   useEffect(() => {
-    ErrorOverlay.sendErrorToParent(error, 'runtime');
+    ErrorOverlay.sendErrorToParent(error);
   }, [error]);
 
   return (
