@@ -260,14 +260,24 @@ export default function HomePage() {
       </nav>
       {/* Hero Section */}
       <section id="hero" className="relative h-screen overflow-hidden pt-20">
-        {/* Background Image */}
+        {/* Background Video */}
         <div className="absolute inset-0">
-          <Image
-            src="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
-            alt="Craft beer pub atmosphere with neon lighting"
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
             className="w-full h-full object-cover"
-            width={1920}
-          />
+          >
+            <source src="https://static.wixstatic.com/media/12d367_71ebdd7141d041e4be3d91d80d4578dd~mv2.mp4?id=hero-background-video" type="video/mp4" />
+            {/* Fallback image for browsers that don't support video */}
+            <Image
+              src="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
+              alt="Craft beer pub atmosphere with neon lighting"
+              className="w-full h-full object-cover"
+              width={1920}
+            />
+          </video>
         </div>
         
         {/* Overlay */}
