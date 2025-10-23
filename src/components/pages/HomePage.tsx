@@ -260,7 +260,7 @@ export default function HomePage() {
       </nav>
       {/* Hero Section */}
       <section id="hero" className="relative h-screen overflow-hidden pt-20">
-        {/* Background Video Placeholder */}
+        {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
@@ -285,12 +285,6 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-4xl"
           >
-            <h1 className={`font-display text-7xl md:text-8xl lg:text-9xl font-black mb-6 tracking-wider ${
-              isDarkMode ? 'text-white' : 'text-gray-900'
-            }`}>
-               Escape By Brewklyn
-            </h1>
-            
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -301,6 +295,12 @@ export default function HomePage() {
             >
               Crafted brews. Urban vibes. Your escape awaits.
             </motion.p>
+            
+            <h1 className={`font-display text-7xl md:text-8xl lg:text-9xl font-black mb-6 tracking-wider ${
+              isDarkMode ? 'text-white' : 'text-gray-900'
+            }`}>
+               Escape By Brewklyn
+            </h1>
             
             <motion.div
               initial={{ opacity: 0, y: 30 }}
