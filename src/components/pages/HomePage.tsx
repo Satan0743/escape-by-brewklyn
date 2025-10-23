@@ -267,8 +267,29 @@ export default function HomePage() {
             loop
             muted
             playsInline
+            preload="auto"
             className="w-full h-full object-cover"
             poster="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
+            onLoadedData={(e) => {
+              // Ensure video plays when loaded
+              const video = e.currentTarget;
+              video.play().catch(() => {
+                // If autoplay fails, show fallback image
+                video.style.display = 'none';
+                const fallbackImg = video.parentElement?.querySelector('img');
+                if (fallbackImg) {
+                  fallbackImg.style.zIndex = '0';
+                }
+              });
+            }}
+            onError={(e) => {
+              // Hide video and show fallback image on error
+              e.currentTarget.style.display = 'none';
+              const fallbackImg = e.currentTarget.parentElement?.querySelector('img');
+              if (fallbackImg) {
+                fallbackImg.style.zIndex = '0';
+              }
+            }}
           >
             <source src="https://static.wixstatic.com/media/12d367_71ebdd7141d041e4be3d91d80d4578dd~mv2.mp4?id=hero-background-video" type="video/mp4" />
             Your browser does not support the video tag.
@@ -280,14 +301,6 @@ export default function HomePage() {
             alt="Craft beer pub atmosphere with neon lighting"
             className="w-full h-full object-cover absolute inset-0 -z-10"
             width={1920}
-            onError={(e) => {
-              // Show fallback image if video fails
-              const video = e.currentTarget.parentElement?.querySelector('video');
-              if (video) {
-                video.style.display = 'none';
-                e.currentTarget.style.zIndex = '0';
-              }
-            }}
           />
         </div>
         
