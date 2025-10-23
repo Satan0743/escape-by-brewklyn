@@ -38,7 +38,8 @@ export default function HomePage() {
     name: '',
     email: '',
     message: '',
-    reservationDate: ''
+    reservationDate: '',
+    reservationTime: ''
   });
 
   useEffect(() => {
@@ -86,11 +87,42 @@ export default function HomePage() {
     setIsMobileMenuOpen(false);
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission
-    setFormData({ name: '', email: '', message: '', reservationDate: '' });
+    
+    try {
+      // Create email content
+      const emailSubject = `Reservation Request from ${formData.name}`;
+      const emailBody = `
+New Reservation Request:
+
+Name: ${formData.name}
+Email: ${formData.email}
+Date: ${formData.reservationDate}
+Time: ${formData.reservationTime}
+
+Message:
+${formData.message}
+
+Please contact the customer to confirm their reservation.
+      `.trim();
+
+      // Create mailto link
+      const mailtoLink = `mailto:itsashu1974@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+      
+      // Open email client
+      window.location.href = mailtoLink;
+      
+      // Reset form
+      setFormData({ name: '', email: '', message: '', reservationDate: '', reservationTime: '' });
+      
+      // Show success message (you could add a toast notification here)
+      alert('Reservation request sent! Your email client should open with the request details.');
+      
+    } catch (error) {
+      console.error('Error sending reservation request:', error);
+      alert('There was an error sending your reservation request. Please try again.');
+    }
   };
 
   const themeClasses = isDarkMode 
@@ -261,48 +293,27 @@ export default function HomePage() {
       {/* Hero Section */}
       <section id="hero" className="relative h-screen overflow-hidden pt-20">
         {/* Background Video */}
-        <div className="absolute inset-0">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            className="w-full h-full object-cover"
-            poster="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
-            onLoadedData={(e) => {
-              // Ensure video plays when loaded
-              const video = e.currentTarget;
-              video.play().catch(() => {
-                // If autoplay fails, show fallback image
-                video.style.display = 'none';
-                const fallbackImg = video.parentElement?.querySelector('img');
-                if (fallbackImg) {
-                  fallbackImg.style.zIndex = '0';
-                }
-              });
-            }}
-            onError={(e) => {
-              // Hide video and show fallback image on error
-              e.currentTarget.style.display = 'none';
-              const fallbackImg = e.currentTarget.parentElement?.querySelector('img');
-              if (fallbackImg) {
-                fallbackImg.style.zIndex = '0';
-              }
-            }}
-          >
-            <source src="https://static.wixstatic.com/media/12d367_71ebdd7141d041e4be3d91d80d4578dd~mv2.mp4?id=hero-background-video" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          
-          {/* Fallback image for when video fails to load */}
-          <Image
-            src="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
-            alt="Craft beer pub atmosphere with neon lighting"
-            className="w-full h-full object-cover absolute inset-0 -z-10"
-            width={1920}
-          />
-        </div>
+  <div className="absolute inset-0 w-full h-full">
+  {/* Vimeo Background Video */}
+  <iframe
+    src="https://player.vimeo.com/video/1129855558?autoplay=1&loop=1&muted=1&background=1"
+    frameBorder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowFullScreen
+    className="w-full h-full object-cover absolute inset-0"
+  />
+
+  {/* Fallback image for when iframe fails */}
+  <Image
+    src="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
+    alt="Craft beer pub atmosphere with neon lighting"
+    className="w-full h-full object-cover absolute inset-0 -z-10"
+    width={1920}
+  />
+</div>
+
+
+
         
         {/* Overlay */}
         <div className={`absolute inset-0 ${
@@ -1180,23 +1191,44 @@ export default function HomePage() {
                   </div>
                 </div>
                 
-                <div>
-                  <Label htmlFor="reservationDate" className={`text-sm font-medium ${
-                    isDarkMode ? 'text-gray-300' : 'text-gray-700'
-                  }`}>
-                    Reservation Date
-                  </Label>
-                  <Input
-                    id="reservationDate"
-                    type="date"
-                    value={formData.reservationDate}
-                    onChange={(e) => setFormData({...formData, reservationDate: e.target.value})}
-                    className={`mt-1 ${
-                      isDarkMode 
-                        ? 'bg-secondary border-gray-600 text-white focus:border-primary' 
-                        : 'bg-white border-gray-300 text-gray-900 focus:border-primary'
-                    }`}
-                  />
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <Label htmlFor="reservationDate" className={`text-sm font-medium ${
+                      isDarkMode ? 'text-gray-300' : 'text-gray-700'
+                    }`}>
+                      Reservation Date
+                    </Label>
+                    <Input
+                      id="reservationDate"
+                      type="date"
+                      value={formData.reservationDate}
+                      onChange={(e) => setFormData({...formData, reservationDate: e.target.value})}
+                      className={`mt-1 ${
+                        isDarkMode 
+                          ? 'bg-secondary border-gray-600 text-white focus:border-primary' 
+                          : 'bg-white border-gray-300 text-gray-900 focus:border-primary'
+                      }`}
+                    />
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="reservationTime" className={`text-sm font-medium ${
+                      isDarkMode ? 'text-gray-300' : 'text-gray-700'
+                    }`}>
+                      Preferred Time
+                    </Label>
+                    <Input
+                      id="reservationTime"
+                      type="time"
+                      value={formData.reservationTime}
+                      onChange={(e) => setFormData({...formData, reservationTime: e.target.value})}
+                      className={`mt-1 ${
+                        isDarkMode 
+                          ? 'bg-secondary border-gray-600 text-white focus:border-primary' 
+                          : 'bg-white border-gray-300 text-gray-900 focus:border-primary'
+                      }`}
+                    />
+                  </div>
                 </div>
                 
                 <div>
