@@ -1287,7 +1287,7 @@ Please contact the customer to confirm their reservation.
                     <span className={`font-paragraph ${
                       isDarkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}>
-                      123 Craft Street, Brooklyn, NY 11201
+                      Bheemaneni Towers, 78/1, 14th Cross Rd, Chanakya Layout, Nagavara, Bengaluru, Karnataka 560045
                     </span>
                   </div>
                   
