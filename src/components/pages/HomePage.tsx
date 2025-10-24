@@ -1296,7 +1296,7 @@ Please contact the customer to confirm their reservation.
                     <span className={`font-paragraph ${
                       isDarkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}>
-                      (555) 123-BREW
+                      6364456513
                     </span>
                   </div>
                   
