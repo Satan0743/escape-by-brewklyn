@@ -294,24 +294,30 @@ Please contact the customer to confirm their reservation.
       {/* Hero Section */}
       <section id="hero" className="relative h-screen overflow-hidden pt-20">
         {/* Background Video */}
-  <div className="absolute inset-0 w-full h-full">
-  {/* Vimeo Background Video */}
-  <iframe
-    src="https://player.vimeo.com/video/1129855558?autoplay=1&loop=1&muted=1&background=1"
-    frameBorder="0"
-    allow="autoplay; fullscreen; picture-in-picture"
-    allowFullScreen
-    className="w-full h-full object-cover absolute inset-0"
-  />
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          {/* Vimeo Background Video */}
+          <iframe
+            src="https://player.vimeo.com/video/1129855558?autoplay=1&loop=1&muted=1&background=1"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            className="absolute top-1/2 left-1/2 w-full h-full min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2"
+            style={{
+              width: '100vw',
+              height: '56.25vw', // 16:9 aspect ratio
+              minHeight: '100vh',
+              minWidth: '177.78vh', // 16:9 aspect ratio
+            }}
+          />
 
-  {/* Fallback image for when iframe fails */}
-  <Image
-    src="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
-    alt="Craft beer pub atmosphere with neon lighting"
-    className="w-full h-full object-cover absolute inset-0 -z-10"
-    width={1920}
-  />
-</div>
+          {/* Fallback image for when iframe fails */}
+          <Image
+            src="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
+            alt="Craft beer pub atmosphere with neon lighting"
+            className="w-full h-full object-cover absolute inset-0 -z-10"
+            width={1920}
+          />
+        </div>
 
 
 
