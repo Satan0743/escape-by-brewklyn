@@ -1305,7 +1305,7 @@ Please contact the customer to confirm their reservation.
                     <span className={`font-paragraph ${
                       isDarkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}>
-                      hello@escapebybrewklyn.com
+                      chayanaa.brewcraft@gmail.com
                     </span>
                   </div>
                 </div>
