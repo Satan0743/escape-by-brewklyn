@@ -15,6 +15,7 @@ import {
   Plus,
   Minus
 } from 'lucide-react';
+import WhatsAppFloat from '@/components/ui/whatsapp-float';
 
 export default function FoodMenuPage() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -769,6 +770,9 @@ export default function FoodMenuPage() {
           </p>
         </div>
       </footer>
+
+      {/* WhatsApp Float Button */}
+      <WhatsAppFloat phoneNumber="6364456513" />
     </div>
   );
 }

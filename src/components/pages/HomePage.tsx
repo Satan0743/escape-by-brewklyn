@@ -28,6 +28,7 @@ import {
   Menu,
   X
 } from 'lucide-react';
+import WhatsAppFloat from '@/components/ui/whatsapp-float';
 
 export default function HomePage() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -1432,6 +1433,9 @@ Please contact the customer to confirm their reservation.
           </div>
         </div>
       </footer>
+
+      {/* WhatsApp Float Button */}
+      <WhatsAppFloat phoneNumber="6364456513" />
     </div>
   );
 }
