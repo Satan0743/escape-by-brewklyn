@@ -158,11 +158,11 @@ Please contact the customer to confirm their reservation.
               className="flex items-center"
             >
               <Image
-                src="https://static.wixstatic.com/media/4d5d5f_3242c608bf5748fcbd9ad43c3b8c9acd~mv2.jpeg"
-                alt="Escape by Brewklyn Logo"
+                src="https://static.wixstatic.com/media/4d5d5f_2f530b89c6ab418a91356b4a2b5348d9~mv2.jpg"
                 className="h-12 w-auto"
                 width={200}
-              />
+                origin-width={1436}
+                origin-height={1444} />
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -1354,12 +1354,13 @@ Please contact the customer to confirm their reservation.
                 
                 <div className="flex gap-4">
                   {[
-                    { icon: Instagram, label: 'Instagram' },
-                    { icon: Facebook, label: 'Facebook' },
-                    { icon: Twitter, label: 'Twitter' }
-                  ].map(({ icon: Icon, label }) => (
+                    { icon: Instagram, label: 'Instagram', url: 'https://www.instagram.com/escape.brewklyn?utm_source=qr&igsh=MTI0dm9kYmc5cjlhcw==' },
+                    { icon: Facebook, label: 'Facebook', url: '#' },
+                    { icon: Twitter, label: 'Twitter', url: '#' }
+                  ].map(({ icon: Icon, label, url }) => (
                     <button
                       key={label}
+                      onClick={() => window.open(url, '_blank')}
                       className={`p-3 rounded-full ${
                         isDarkMode 
                           ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
@@ -1443,7 +1444,6 @@ Please contact the customer to confirm their reservation.
           </div>
         </div>
       </footer>
-
       {/* WhatsApp Float Button */}
       <WhatsAppFloat phoneNumber="6364456513" />
     </div>
