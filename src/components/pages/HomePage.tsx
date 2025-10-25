@@ -1424,7 +1424,7 @@ Please contact the customer to confirm their reservation.
               </h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>Bheemaneni Towers, 78/1, 14th Cross Rd, Chanakya Layout, Nagavara, Bengaluru, Karnataka 560045</li>
-                <li>Brooklyn, NY 11201</li>
+
                 <li>(555) 123-BREW</li>
               </ul>
             </div>
