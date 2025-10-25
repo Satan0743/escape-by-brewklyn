@@ -1327,17 +1327,21 @@ Please contact the customer to confirm their reservation.
                   className="w-full h-full object-cover"
                   width={600}
                 />
-                <div className={`absolute inset-0 flex items-center justify-center ${
-                  isDarkMode ? 'bg-black/50' : 'bg-white/50'
-                }`}>
-                  <div className={`p-4 rounded-full ${
+                <button 
+                  onClick={() => window.open('https://maps.app.goo.gl/Smq36oFJgqAQ4SDT7', '_blank')}
+                  className={`absolute inset-0 flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-105 ${
+                    isDarkMode ? 'bg-black/50 hover:bg-black/60' : 'bg-white/50 hover:bg-white/60'
+                  }`}
+                  aria-label="Open location in Google Maps"
+                >
+                  <div className={`p-4 rounded-full transition-all duration-300 ${
                     isDarkMode 
-                      ? 'bg-primary shadow-lg shadow-primary/50' 
-                      : 'bg-primary shadow-lg'
+                      ? 'bg-primary shadow-lg shadow-primary/50 hover:shadow-primary/75' 
+                      : 'bg-primary shadow-lg hover:shadow-xl'
                   }`}>
                     <MapPin className="w-8 h-8 text-primary-foreground" />
                   </div>
-                </div>
+                </button>
               </div>
               
               {/* Social Media */}
