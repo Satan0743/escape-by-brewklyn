@@ -1355,7 +1355,7 @@ Please contact the customer to confirm their reservation.
                 <div className="flex gap-4">
                   {[
                     { icon: Instagram, label: 'Instagram', url: 'https://www.instagram.com/escape.brewklyn?utm_source=qr&igsh=MTI0dm9kYmc5cjlhcw==' },
-                    { icon: Facebook, label: 'Facebook', url: '#' },
+                    { icon: Facebook, label: 'Facebook', url: 'https://www.facebook.com/share/17QCwzdsYr/' },
                     { icon: Twitter, label: 'Twitter', url: '#' }
                   ].map(({ icon: Icon, label, url }) => (
                     <button
