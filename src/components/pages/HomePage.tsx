@@ -1412,7 +1412,7 @@ Please contact the customer to confirm their reservation.
                 Hours
               </h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Life's too short for closed doors - that's why we're open 7 days, 12 to 12.</li>
+                <li>Life's too short for closed doors - that's why we're open 7 days in a week, 12 pm to 12 am.</li>
               </ul>
             </div>
             
