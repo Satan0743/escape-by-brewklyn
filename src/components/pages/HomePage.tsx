@@ -34,6 +34,7 @@ export default function HomePage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [signatureBrews, setSignatureBrews] = useState<SignatureBrews[]>([]);
   const [events, setEvents] = useState<Events[]>([]);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -41,6 +42,14 @@ export default function HomePage() {
     reservationDate: '',
     reservationTime: ''
   });
+
+  // Hero slideshow images
+  const heroImages = [
+    "https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024",
+    "https://static.wixstatic.com/media/4d5d5f_3321cbf9c832490a9192855617c86091~mv2.png?originWidth=768&originHeight=576",
+    "https://static.wixstatic.com/media/4d5d5f_4f416df402a54789bc14c6262e504e3f~mv2.png?originWidth=1920&originHeight=1024",
+    "https://static.wixstatic.com/media/4d5d5f_80b5d708a83f4ff2884807182a17452e~mv2.png?originWidth=576&originHeight=384"
+  ];
 
   useEffect(() => {
     // Apply theme to document
@@ -56,7 +65,14 @@ export default function HomePage() {
 
     // Fetch data
     fetchData();
-  }, [isDarkMode]);
+
+    // Auto-advance slideshow
+    const slideInterval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(slideInterval);
+  }, [isDarkMode, heroImages.length]);
 
   const fetchData = async () => {
     try {
@@ -292,30 +308,41 @@ Please contact the customer to confirm their reservation.
       </nav>
       {/* Hero Section */}
       <section id="hero" className="relative h-screen overflow-hidden pt-20">
-        {/* Background Video */}
+        {/* Background Slideshow */}
         <div className="absolute inset-0 w-full h-full overflow-hidden">
-          {/* Vimeo Background Video */}
-          <iframe
-            src="https://player.vimeo.com/video/1129855558?autoplay=1&loop=1&muted=1&background=1"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-            className="absolute top-1/2 left-1/2 w-full h-full min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2"
-            style={{
-              width: '100vw',
-              height: '56.25vw', // 16:9 aspect ratio
-              minHeight: '100vh',
-              minWidth: '177.78vh', // 16:9 aspect ratio
-            }}
-          />
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentSlide}
+              initial={{ opacity: 0, scale: 1.1 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              className="absolute inset-0 w-full h-full"
+            >
+              <Image
+                src={heroImages[currentSlide]}
+                alt={`Craft beer pub atmosphere - slide ${currentSlide + 1}`}
+                className="w-full h-full object-cover"
+                width={1920}
+              />
+            </motion.div>
+          </AnimatePresence>
 
-          {/* Fallback image for when iframe fails */}
-          <Image
-            src="https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024"
-            alt="Craft beer pub atmosphere with neon lighting"
-            className="w-full h-full object-cover absolute inset-0 -z-10"
-            width={1920}
-          />
+          {/* Slideshow Navigation Dots */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+            {heroImages.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentSlide
+                    ? 'bg-primary scale-125 shadow-lg shadow-primary/50'
+                    : 'bg-white/50 hover:bg-white/75'
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
 
 
