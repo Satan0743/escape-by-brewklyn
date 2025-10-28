@@ -47,7 +47,8 @@ export default function HomePage() {
   const heroImages = [
     "https://static.wixstatic.com/media/e69b47_2e92d1255cf14e88b729a2f2a0560a3b~mv2.jpg",
     "https://static.wixstatic.com/media/e69b47_031668e8babe40a9a8926bd60331fafe~mv2.jpg",
-    "https://static.wixstatic.com/media/e69b47_2e2fc5f0d2e641dc826b42873abe2a69~mv2.jpg"
+    "https://static.wixstatic.com/media/e69b47_2e2fc5f0d2e641dc826b42873abe2a69~mv2.jpg",
+    "https://static.wixstatic.com/media/4d5d5f_279dd881ed3f43cb822793e35d1c5098~mv2.jpeg"
   ];
 
   useEffect(() => {
