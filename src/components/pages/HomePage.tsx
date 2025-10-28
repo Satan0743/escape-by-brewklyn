@@ -38,6 +38,8 @@ export default function HomePage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
+    guests: '',
     message: '',
     reservationDate: '',
     reservationTime: ''
@@ -117,6 +119,8 @@ New Reservation Request:
 
 Name: ${formData.name}
 Email: ${formData.email}
+Phone: ${formData.phone || 'Not provided'}
+Number of Guests: ${formData.guests || 'Not specified'}
 Date: ${formData.reservationDate}
 Time: ${formData.reservationTime}
 
@@ -133,7 +137,7 @@ Please contact the customer to confirm their reservation.
       window.location.href = mailtoLink;
       
       // Reset form
-      setFormData({ name: '', email: '', message: '', reservationDate: '', reservationTime: '' });
+      setFormData({ name: '', email: '', phone: '', guests: '', message: '', reservationDate: '', reservationTime: '' });
       
       // Show success message (you could add a toast notification here)
       alert('Reservation request sent! Your email client should open with the request details.');
@@ -330,22 +334,8 @@ Please contact the customer to confirm their reservation.
               />
             </motion.div>
           </AnimatePresence>
-
           {/* Slideshow Navigation Dots */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
-            {heroImages.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentSlide
-                    ? 'bg-primary scale-125 shadow-lg shadow-primary/50'
-                    : 'bg-white/50 hover:bg-white/75'
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
+
         </div>
 
 
@@ -1223,6 +1213,50 @@ Please contact the customer to confirm their reservation.
                           : 'bg-white border-gray-300 text-gray-900 focus:border-primary'
                       }`}
                       required
+                    />
+                  </div>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <Label htmlFor="phone" className={`text-sm font-medium ${
+                      isDarkMode ? 'text-gray-300' : 'text-gray-700'
+                    }`}>
+                      Phone Number
+                    </Label>
+                    <Input
+                      id="phone"
+                      type="tel"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      className={`mt-1 ${
+                        isDarkMode 
+                          ? 'bg-secondary border-gray-600 text-white focus:border-primary' 
+                          : 'bg-white border-gray-300 text-gray-900 focus:border-primary'
+                      }`}
+                      placeholder="(555) 123-4567"
+                    />
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="guests" className={`text-sm font-medium ${
+                      isDarkMode ? 'text-gray-300' : 'text-gray-700'
+                    }`}>
+                      Number of Guests
+                    </Label>
+                    <Input
+                      id="guests"
+                      type="number"
+                      min="1"
+                      max="20"
+                      value={formData.guests}
+                      onChange={(e) => setFormData({...formData, guests: e.target.value})}
+                      className={`mt-1 ${
+                        isDarkMode 
+                          ? 'bg-secondary border-gray-600 text-white focus:border-primary' 
+                          : 'bg-white border-gray-300 text-gray-900 focus:border-primary'
+                      }`}
+                      placeholder="2"
                     />
                   </div>
                 </div>
