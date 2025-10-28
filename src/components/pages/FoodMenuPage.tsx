@@ -430,35 +430,16 @@ export default function FoodMenuPage() {
               </Link>
               
               <Image
-                src="https://static.wixstatic.com/media/4d5d5f_3242c608bf5748fcbd9ad43c3b8c9acd~mv2.jpeg"
-                alt="Escape by Brewklyn Logo"
+                src="https://static.wixstatic.com/media/4d5d5f_2f530b89c6ab418a91356b4a2b5348d9~mv2.jpg"
                 className="h-12 w-auto"
                 width={200}
-              />
+                originWidth={1436}
+                originHeight={1444} />
             </div>
 
             {/* Cart & Theme Toggle */}
             <div className="flex items-center gap-4">
               {/* Cart Button */}
-              <Button
-                variant="outline"
-                size="sm"
-                className={`relative ${
-                  isDarkMode 
-                    ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground' 
-                    : 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
-                } transition-all duration-300`}
-              >
-                <ShoppingCart className="w-4 h-4 mr-2" />
-                Cart
-                {Object.values(cart).reduce((sum, qty) => sum + qty, 0) > 0 && (
-                  <span className={`absolute -top-2 -right-2 w-5 h-5 rounded-full text-xs flex items-center justify-center ${
-                    isDarkMode ? 'bg-primary text-primary-foreground' : 'bg-primary text-primary-foreground'
-                  }`}>
-                    {Object.values(cart).reduce((sum, qty) => sum + qty, 0)}
-                  </span>
-                )}
-              </Button>
 
               {/* Theme Toggle */}
               <motion.button
@@ -477,16 +458,15 @@ export default function FoodMenuPage() {
           </div>
         </div>
       </nav>
-
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 px-8 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://static.wixstatic.com/media/4d5d5f_3321cbf9c832490a9192855617c86091~mv2.png?originWidth=768&originHeight=576"
-            alt="Food menu background"
+            src="https://static.wixstatic.com/media/4d5d5f_85e9af66b09c44e09e95c933bd376295~mv2.jpeg"
             className="w-full h-full object-cover opacity-20"
             width={1920}
-          />
+            originWidth={1280}
+            originHeight={853} />
         </div>
         
         <div className="relative max-w-[120rem] mx-auto text-center">
@@ -509,7 +489,6 @@ export default function FoodMenuPage() {
           </motion.div>
         </div>
       </section>
-
       {/* Category Filter */}
       <section className="py-8 px-8">
         <div className="max-w-[120rem] mx-auto">
@@ -535,7 +514,6 @@ export default function FoodMenuPage() {
           </div>
         </div>
       </section>
-
       {/* Food Items Grid */}
       <section className="py-8 px-8">
         <div className="max-w-[120rem] mx-auto">
@@ -670,7 +648,6 @@ export default function FoodMenuPage() {
           </div>
         </div>
       </section>
-
       {/* Cart Summary (Fixed Bottom) */}
       {Object.values(cart).reduce((sum, qty) => sum + qty, 0) > 0 && (
         <div className={`fixed bottom-0 left-0 right-0 z-40 ${
@@ -703,7 +680,6 @@ export default function FoodMenuPage() {
           </div>
         </div>
       )}
-
       {/* Call to Action */}
       <section className={`py-16 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'} ${
         Object.values(cart).reduce((sum, qty) => sum + qty, 0) > 0 ? 'mb-20' : ''
@@ -759,7 +735,6 @@ export default function FoodMenuPage() {
           </motion.div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className={`py-12 px-8 ${
         isDarkMode ? 'bg-black border-t border-gray-800' : 'bg-gray-900'
@@ -770,7 +745,6 @@ export default function FoodMenuPage() {
           </p>
         </div>
       </footer>
-
       {/* WhatsApp Float Button */}
       <WhatsAppFloat phoneNumber="6364456513" />
     </div>

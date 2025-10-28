@@ -416,11 +416,11 @@ Please contact the customer to confirm their reservation.
               viewport={{ once: true }}
             >
               <Image
-                src="https://static.wixstatic.com/media/4d5d5f_3321cbf9c832490a9192855617c86091~mv2.png?originWidth=768&originHeight=576"
-                alt="Modern bar interior with craft beer taps and urban design"
+                src="https://static.wixstatic.com/media/4d5d5f_85e9af66b09c44e09e95c933bd376295~mv2.jpeg"
                 className="w-full h-[600px] object-cover rounded-lg"
                 width={800}
-              />
+                originWidth={1280}
+                originHeight={853} />
             </motion.div>
             
             <motion.div
