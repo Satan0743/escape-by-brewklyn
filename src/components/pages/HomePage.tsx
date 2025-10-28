@@ -49,7 +49,8 @@ export default function HomePage() {
     "https://static.wixstatic.com/media/e69b47_031668e8babe40a9a8926bd60331fafe~mv2.jpg",
     "https://static.wixstatic.com/media/e69b47_2e2fc5f0d2e641dc826b42873abe2a69~mv2.jpg",
     "https://static.wixstatic.com/media/4d5d5f_279dd881ed3f43cb822793e35d1c5098~mv2.jpeg",
-    "https://static.wixstatic.com/media/4d5d5f_a7536e045e91432386d47db6026ab401~mv2.jpeg"
+    "https://static.wixstatic.com/media/4d5d5f_a7536e045e91432386d47db6026ab401~mv2.jpeg",
+    "https://static.wixstatic.com/media/4d5d5f_3dfa678f9c144b24989849f50c8a1a1a~mv2.jpeg"
   ];
 
   useEffect(() => {
