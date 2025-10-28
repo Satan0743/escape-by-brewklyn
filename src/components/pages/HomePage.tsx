@@ -45,10 +45,9 @@ export default function HomePage() {
 
   // Hero slideshow images
   const heroImages = [
-    "https://static.wixstatic.com/media/4d5d5f_6ad4c8669f5a4461a75ced2370e8f0fb~mv2.png?originWidth=1920&originHeight=1024",
-    "https://static.wixstatic.com/media/4d5d5f_3321cbf9c832490a9192855617c86091~mv2.png?originWidth=768&originHeight=576",
-    "https://static.wixstatic.com/media/4d5d5f_4f416df402a54789bc14c6262e504e3f~mv2.png?originWidth=1920&originHeight=1024",
-    "https://static.wixstatic.com/media/4d5d5f_80b5d708a83f4ff2884807182a17452e~mv2.png?originWidth=576&originHeight=384"
+    "https://static.wixstatic.com/media/e69b47_2e92d1255cf14e88b729a2f2a0560a3b~mv2.jpg",
+    "https://static.wixstatic.com/media/e69b47_031668e8babe40a9a8926bd60331fafe~mv2.jpg",
+    "https://static.wixstatic.com/media/e69b47_2e2fc5f0d2e641dc826b42873abe2a69~mv2.jpg"
   ];
 
   useEffect(() => {
