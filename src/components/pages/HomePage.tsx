@@ -414,8 +414,57 @@ Please contact the customer to confirm their reservation.
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
+              className="relative"
             >
-
+              <div className="relative overflow-hidden rounded-2xl">
+                <Image
+                  src="https://static.wixstatic.com/media/4d5d5f_77f7204625b74210833889625e9f5893~mv2.png?originWidth=768&originHeight=576"
+                  alt="Warm and inviting craft brewery interior with exposed brick walls and copper brewing tanks"
+                  className="w-full h-[500px] object-cover"
+                  width={800}
+                />
+                <div className={`absolute inset-0 ${
+                  isDarkMode 
+                    ? 'bg-gradient-to-t from-black/60 via-transparent to-transparent' 
+                    : 'bg-gradient-to-t from-black/30 via-transparent to-transparent'
+                }`} />
+                
+                {/* Floating Stats Overlay */}
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className={`text-center p-4 rounded-lg backdrop-blur-md ${
+                      isDarkMode ? 'bg-black/40' : 'bg-white/20'
+                    }`}>
+                      <div className={`text-2xl font-bold ${isDarkMode ? 'text-primary' : 'text-white'}`}>
+                        15+
+                      </div>
+                      <div className={`text-xs ${isDarkMode ? 'text-gray-200' : 'text-white'}`}>
+                        Signature Brews
+                      </div>
+                    </div>
+                    <div className={`text-center p-4 rounded-lg backdrop-blur-md ${
+                      isDarkMode ? 'bg-black/40' : 'bg-white/20'
+                    }`}>
+                      <div className={`text-2xl font-bold ${isDarkMode ? 'text-primary' : 'text-white'}`}>
+                        5★
+                      </div>
+                      <div className={`text-xs ${isDarkMode ? 'text-gray-200' : 'text-white'}`}>
+                        Rated Experience
+                      </div>
+                    </div>
+                    <div className={`text-center p-4 rounded-lg backdrop-blur-md ${
+                      isDarkMode ? 'bg-black/40' : 'bg-white/20'
+                    }`}>
+                      <div className={`text-2xl font-bold ${isDarkMode ? 'text-primary' : 'text-white'}`}>
+                        24/7
+                      </div>
+                      <div className={`text-xs ${isDarkMode ? 'text-gray-200' : 'text-white'}`}>
+                        Urban Vibes
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
             
             <motion.div
