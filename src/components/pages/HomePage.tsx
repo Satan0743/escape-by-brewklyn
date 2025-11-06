@@ -591,30 +591,17 @@ Please contact the customer to confirm their reservation.
                     }`}>
                       {brew.name}
                     </h3>
-                    
                     <p className={`font-paragraph text-sm mb-3 ${
                       isDarkMode ? 'text-primary' : 'text-primary'
                     }`}>
                       {brew.beerStyle}
                     </p>
-                    
                     <p className={`font-paragraph text-sm mb-4 ${
                       isDarkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}>
                       {brew.flavorDescription}
                     </p>
-                    
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className={`w-full ${
-                        isDarkMode 
-                          ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground' 
-                          : 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
-                      } transition-all duration-300`}
-                    >
-                      View Full Brew
-                    </Button>
+
                   </CardContent>
                 </Card>
               </motion.div>
