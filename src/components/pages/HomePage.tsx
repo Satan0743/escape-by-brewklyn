@@ -456,7 +456,7 @@ Please contact the customer to confirm their reservation.
                       isDarkMode ? 'bg-black/40' : 'bg-white/20'
                     }`}>
                       <div className={`text-2xl font-bold ${isDarkMode ? 'text-primary' : 'text-white'}`}>
-                        Everyday
+                        EveryDay
                       </div>
                       <div className={`text-xs ${isDarkMode ? 'text-gray-200' : 'text-white'}`}>
                         Urban Vibes
@@ -519,7 +519,7 @@ Please contact the customer to confirm their reservation.
                 </div>
                 <div className="text-center">
                   <div className={`text-3xl font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                    Everyday
+                    EveryDay
                   </div>
                   <div className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                     Urban Vibes
