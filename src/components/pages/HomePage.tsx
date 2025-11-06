@@ -183,8 +183,7 @@ Please contact the customer to confirm their reservation.
                 src="https://static.wixstatic.com/media/4d5d5f_2f530b89c6ab418a91356b4a2b5348d9~mv2.jpg"
                 className="h-12 w-auto"
                 width={200}
-                origin-width={1436}
-                origin-height={1444} />
+                alt="Escape by Brewklyn Logo" />
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -381,6 +380,7 @@ Please contact the customer to confirm their reservation.
             >
               <Button
                 size="lg"
+                onClick={() => scrollToSection('contact')}
                 className={`px-8 py-4 text-lg font-semibold ${
                   isDarkMode 
                     ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
@@ -419,8 +419,7 @@ Please contact the customer to confirm their reservation.
                 src="https://static.wixstatic.com/media/4d5d5f_85e9af66b09c44e09e95c933bd376295~mv2.jpeg"
                 className="w-full h-[600px] object-cover rounded-lg"
                 width={800}
-                originWidth={1280}
-                originHeight={853} />
+                alt="Craft beer pub interior" />
             </motion.div>
             
             <motion.div
