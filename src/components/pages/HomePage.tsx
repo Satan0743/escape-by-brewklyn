@@ -456,7 +456,7 @@ Please contact the customer to confirm their reservation.
                       isDarkMode ? 'bg-black/40' : 'bg-white/20'
                     }`}>
                       <div className={`text-2xl font-bold ${isDarkMode ? 'text-primary' : 'text-white'}`}>
-                        24/7
+                        Everyday
                       </div>
                       <div className={`text-xs ${isDarkMode ? 'text-gray-200' : 'text-white'}`}>
                         Urban Vibes
@@ -519,7 +519,7 @@ Please contact the customer to confirm their reservation.
                 </div>
                 <div className="text-center">
                   <div className={`text-3xl font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                    24/7
+                    Everyday
                   </div>
                   <div className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                     Urban Vibes
@@ -1132,9 +1132,7 @@ Please contact the customer to confirm their reservation.
                   
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <Calendar className={`w-4 h-4 ${
-                        isDarkMode ? 'text-primary' : 'text-primary'
-                      }`} />
+
                       <span className={`text-sm ${
                         isDarkMode ? 'text-gray-400' : 'text-gray-600'
                       }`}>
