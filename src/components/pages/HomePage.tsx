@@ -418,8 +418,8 @@ Please contact the customer to confirm their reservation.
             >
               <div className="relative overflow-hidden rounded-2xl">
                 <Image
-                  src="https://static.wixstatic.com/media/4d5d5f_77f7204625b74210833889625e9f5893~mv2.png?originWidth=768&originHeight=576"
-                  alt="Warm and inviting craft brewery interior with exposed brick walls and copper brewing tanks"
+                  src="https://static.wixstatic.com/media/4d5d5f_8cab8d9b072a45389a86c17b7a1a572f~mv2.jpeg"
+                  alt="Modern brewery interior with BREWSCAPE signage and industrial design elements"
                   className="w-full h-[500px] object-cover"
                   width={800}
                 />
