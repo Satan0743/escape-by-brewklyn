@@ -415,11 +415,7 @@ Please contact the customer to confirm their reservation.
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <Image
-                src="https://static.wixstatic.com/media/4d5d5f_85e9af66b09c44e09e95c933bd376295~mv2.jpeg"
-                className="w-full h-[800px] object-cover rounded-lg"
-                width={800}
-                alt="Craft beer pub interior" />
+
             </motion.div>
             
             <motion.div
