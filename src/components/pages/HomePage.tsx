@@ -180,10 +180,11 @@ Please contact the customer to confirm their reservation.
               className="flex items-center"
             >
               <Image
-                src="https://static.wixstatic.com/media/4d5d5f_2f530b89c6ab418a91356b4a2b5348d9~mv2.jpg"
+                src="https://static.wixstatic.com/media/4d5d5f_f5ac964b85534ad6850fa320f3b6c1ac~mv2.jpg"
                 className="h-12 w-auto"
                 width={200}
-                alt="Escape by Brewklyn Logo" />
+                originWidth={1600}
+                originHeight={1600} />
             </motion.div>
 
             {/* Desktop Navigation */}
