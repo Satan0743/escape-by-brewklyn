@@ -659,52 +659,37 @@ Please contact the customer to confirm their reservation.
                   </h3>
                   
                   <div className="space-y-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Paneer Tikka Masala
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Rich & creamy tomato gravy
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹395
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Paneer Tikka Masala
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        Rich & creamy tomato gravy
+                      </p>
                     </div>
                     
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Chicken Tikka Masala
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Tender chicken in spiced gravy
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹450
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Chicken Tikka Masala
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        Tender chicken in spiced gravy
+                      </p>
                     </div>
                     
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Mutton Rogan Josh
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Aromatic Kashmiri specialty
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹520
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Mutton Rogan Josh
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        Aromatic Kashmiri specialty
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -737,52 +722,37 @@ Please contact the customer to confirm their reservation.
                   </h3>
                   
                   <div className="space-y-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Classic Veg
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Fresh veggies & cheese
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹365
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Classic Veg
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        Fresh veggies & cheese
+                      </p>
                     </div>
                     
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Two Cheese Burger
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Double cheese delight
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹375
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Two Cheese Burger
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        Double cheese delight
+                      </p>
                     </div>
                     
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Lamb Burger
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Juicy lamb patty
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹445
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Lamb Burger
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        Juicy lamb patty
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -815,52 +785,37 @@ Please contact the customer to confirm their reservation.
                   </h3>
                   
                   <div className="space-y-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Margherita
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Classic tomato & mozzarella
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹495
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Margherita
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        Classic tomato & mozzarella
+                      </p>
                     </div>
                     
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Escape House
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Signature house special
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹525
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Escape House
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        Signature house special
+                      </p>
                     </div>
                     
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Paneer Tikka Pizza
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Indian fusion delight
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹595
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Paneer Tikka Pizza
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        Indian fusion delight
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -893,52 +848,37 @@ Please contact the customer to confirm their reservation.
                   </h3>
                   
                   <div className="space-y-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Escape Tres Leches
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Three milk cake delight
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹310
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Escape Tres Leches
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        Three milk cake delight
+                      </p>
                     </div>
                     
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Apple Crumble
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          With vanilla ice cream
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹340
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Apple Crumble
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        With vanilla ice cream
+                      </p>
                     </div>
                     
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className={`font-heading text-lg font-semibold ${
-                          isDarkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
-                          Salted Caramel Brownie
-                        </h4>
-                        <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                          Rich & indulgent
-                        </p>
-                      </div>
-                      <span className={`font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                        ₹335
-                      </span>
+                    <div>
+                      <h4 className={`font-heading text-lg font-semibold ${
+                        isDarkMode ? 'text-white' : 'text-gray-900'
+                      }`}>
+                        Salted Caramel Brownie
+                      </h4>
+                      <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                        Rich & indulgent
+                      </p>
                     </div>
                   </div>
                 </CardContent>
