@@ -452,16 +452,7 @@ Please contact the customer to confirm their reservation.
                         Rated Experience
                       </div>
                     </div>
-                    <div className={`text-center p-4 rounded-lg backdrop-blur-md ${
-                      isDarkMode ? 'bg-black/40' : 'bg-white/20'
-                    }`}>
-                      <div className={`text-2xl font-bold ${isDarkMode ? 'text-primary' : 'text-white'}`}>
-                        EveryDay
-                      </div>
-                      <div className={`text-xs ${isDarkMode ? 'text-gray-200' : 'text-white'}`}>
-                        Urban Vibes
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>
