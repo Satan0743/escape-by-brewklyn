@@ -433,8 +433,7 @@ export default function FoodMenuPage() {
                 src="https://static.wixstatic.com/media/4d5d5f_f5ac964b85534ad6850fa320f3b6c1ac~mv2.jpg"
                 className="h-12 w-auto"
                 width={200}
-                originWidth={1600}
-                originHeight={1600} />
+                alt="Escape by Brewklyn logo" />
             </div>
 
             {/* Cart & Theme Toggle */}
@@ -549,17 +548,12 @@ export default function FoodMenuPage() {
                   </div>
                   
                   <CardContent className="p-6">
-                    <div className="flex justify-between items-start mb-3">
+                    <div className="mb-3">
                       <h3 className={`font-heading text-lg font-bold ${
                         isDarkMode ? 'text-white' : 'text-gray-900'
                       }`}>
                         {item.name}
                       </h3>
-                      <span className={`text-xl font-bold ${
-                        isDarkMode ? 'text-primary' : 'text-primary'
-                      }`}>
-                        {item.price}
-                      </span>
                     </div>
                     
                     <p className={`font-paragraph text-sm mb-4 ${
