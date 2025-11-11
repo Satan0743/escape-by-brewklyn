@@ -622,17 +622,25 @@ export default function FoodMenuPage() {
                         </Button>
                       </div>
                     ) : (
-                      <Button
-                        onClick={() => addToCart(item.name)}
-                        className={`w-full ${
-                          isDarkMode 
-                            ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
-                            : 'bg-primary hover:bg-primary/90 text-primary-foreground'
-                        } transition-all duration-300`}
-                        size="sm"
-                      >
-                        Add to Cart
-                      </Button>
+                      <div className="flex items-center justify-between">
+                        <span className={`font-bold text-xl ${
+                          isDarkMode ? 'text-primary' : 'text-primary'
+                        }`}>
+                          {item.price}
+                        </span>
+                        
+                        <Button
+                          onClick={() => addToCart(item.name)}
+                          className={`${
+                            isDarkMode 
+                              ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
+                              : 'bg-primary hover:bg-primary/90 text-primary-foreground'
+                          } transition-all duration-300`}
+                        >
+                          <Plus className="w-4 h-4 mr-2" />
+                          Add to Cart
+                        </Button>
+                      </div>
                     )}
                   </CardContent>
                 </Card>
