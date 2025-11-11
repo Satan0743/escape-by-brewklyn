@@ -452,6 +452,16 @@ Please contact the customer to confirm their reservation.
                         Rated Experience
                       </div>
                     </div>
+                    <div className={`text-center p-4 rounded-lg backdrop-blur-md ${
+                      isDarkMode ? 'bg-black/40' : 'bg-white/20'
+                    }`}>
+                      <div className={`text-2xl font-bold ${isDarkMode ? 'text-primary' : 'text-white'}`}>
+                        24/7
+                      </div>
+                      <div className={`text-xs ${isDarkMode ? 'text-gray-200' : 'text-white'}`}>
+                        Fresh Brewing
+                      </div>
+                    </div>
 
                   </div>
                 </div>
