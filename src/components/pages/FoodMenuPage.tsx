@@ -412,8 +412,17 @@ export default function FoodMenuPage() {
       } transition-all duration-300`}>
         <div className="max-w-[120rem] mx-auto px-8">
           <div className="flex items-center justify-between h-20">
-            {/* Back Button & Logo */}
-            <div className="flex items-center gap-4">
+            {/* Logo - Left Corner */}
+            <div className="flex items-center">
+              <Image
+                src="https://static.wixstatic.com/media/4d5d5f_f5ac964b85534ad6850fa320f3b6c1ac~mv2.jpg"
+                className="h-12 w-auto"
+                width={200}
+                alt="Escape by Brewklyn logo" />
+            </div>
+
+            {/* Center - Back Button */}
+            <div className="flex items-center">
               <Link to="/">
                 <Button
                   variant="ghost"
@@ -428,15 +437,9 @@ export default function FoodMenuPage() {
                   Back to Home
                 </Button>
               </Link>
-              
-              <Image
-                src="https://static.wixstatic.com/media/4d5d5f_f5ac964b85534ad6850fa320f3b6c1ac~mv2.jpg"
-                className="h-12 w-auto"
-                width={200}
-                alt="Escape by Brewklyn logo" />
             </div>
 
-            {/* Cart & Theme Toggle */}
+            {/* Right - Cart & Theme Toggle */}
             <div className="flex items-center gap-4">
               {/* Cart Button */}
 
