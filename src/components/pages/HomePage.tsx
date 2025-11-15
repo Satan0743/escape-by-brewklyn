@@ -574,7 +574,10 @@ Please contact the customer to confirm their reservation.
                 }`}>
                   <div className="relative overflow-hidden">
                     <Image
-                      src="https://static.wixstatic.com/media/4d5d5f_531895c85ac24c06be160a524c126a6e~mv2.png?originWidth=384&originHeight=256"
+                      src={brewName === 'Belgium wheat' 
+                        ? "https://static.wixstatic.com/media/4d5d5f_2e5338347e3c4aad83ab7cc1f41bde3c~mv2.jpg"
+                        : "https://static.wixstatic.com/media/4d5d5f_531895c85ac24c06be160a524c126a6e~mv2.png?originWidth=384&originHeight=256"
+                      }
                       alt={brewName}
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                       width={400}
