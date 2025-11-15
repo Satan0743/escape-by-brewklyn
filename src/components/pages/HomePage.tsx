@@ -555,9 +555,9 @@ Please contact the customer to confirm their reservation.
           </motion.div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {signatureBrews.map((brew, index) => (
+            {['Belgium wheat', 'Belgium triple', 'Belgium Pilsner', 'hefeweizen', 'weizen bock', 'Mango wheat', 'Saison'].map((brewName, index) => (
               <motion.div
-                key={brew._id}
+                key={brewName}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -574,8 +574,8 @@ Please contact the customer to confirm their reservation.
                 }`}>
                   <div className="relative overflow-hidden">
                     <Image
-                      src={brew.beerImage || "https://static.wixstatic.com/media/4d5d5f_531895c85ac24c06be160a524c126a6e~mv2.png?originWidth=384&originHeight=256"}
-                      alt={brew.name || "Signature brew"}
+                      src="https://static.wixstatic.com/media/4d5d5f_531895c85ac24c06be160a524c126a6e~mv2.png?originWidth=384&originHeight=256"
+                      alt={brewName}
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                       width={400}
                     />
@@ -590,17 +590,17 @@ Please contact the customer to confirm their reservation.
                     <h3 className={`font-heading text-xl font-bold mb-2 ${
                       isDarkMode ? 'text-white' : 'text-gray-900'
                     }`}>
-                      Belgium triple
+                      {brewName}
                     </h3>
                     <p className={`font-paragraph text-sm mb-3 ${
                       isDarkMode ? 'text-primary' : 'text-primary'
                     }`}>
-                      {brew.beerStyle}
+                      Craft Beer
                     </p>
                     <p className={`font-paragraph text-sm mb-4 ${
                       isDarkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}>
-                      {brew.flavorDescription}
+                      A carefully crafted brew with unique flavors and character.
                     </p>
 
                   </CardContent>
