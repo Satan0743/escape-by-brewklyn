@@ -583,6 +583,8 @@ Please contact the customer to confirm their reservation.
                           ? "https://static.wixstatic.com/media/4d5d5f_7f85734b101b4e9b94c911f7f366f2e2~mv2.webp"
                           : brewName === 'hefeweizen'
                           ? "https://static.wixstatic.com/media/4d5d5f_2e43884477474213858990d157a7738e~mv2.webp"
+                          : brewName === 'weizen bock'
+                          ? "https://static.wixstatic.com/media/4d5d5f_6ecdd848d1954a64a9ce82603b2ebe14~mv2.jpg"
                           : "https://static.wixstatic.com/media/4d5d5f_531895c85ac24c06be160a524c126a6e~mv2.png?originWidth=384&originHeight=256"
                       }
                       alt={brewName}
