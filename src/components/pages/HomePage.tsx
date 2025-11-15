@@ -616,7 +616,9 @@ Please contact the customer to confirm their reservation.
                     <p className={`font-paragraph text-sm mb-4 ${
                       isDarkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}>
-                      {brewName === 'Belgium triple' 
+                      {brewName === 'Belgium wheat'
+                        ? 'Immerse yourself in the timeless elegance of Belgian Wheat Beer — a gracefully crafted Witbier born from centuries of brewing mastery. Its signature golden haze glows softly in the glass, releasing delicate waves of sun-kissed citrus, crushed coriander, and subtle floral spice. Each sip is silky and refreshing, unfolding with a gentle wheat sweetness and a crisp, airy finish that lingers like a summer breeze. A beer that feels light yet refined, smooth yet expressive — the perfect harmony of tradition, craftsmanship, and pure refreshment.'
+                        : brewName === 'Belgium triple' 
                         ? 'A Belgian Tripel is a strong, pale ale from Belgium, known for its complex flavors from specialty yeast strains. It\'s typically golden in color with a moderate to high alcohol content (7-7.5% ABV, 23-26 IBU) and features a balance of spicy, fruity, and grainy-sweet notes.'
                         : brewName === 'Belgium Pilsner'
                         ? 'Pilsner is a pale lager characterized by a pale, golden color, crisp taste, and floral, spicy hop aroma, originating from the city of Plzeň (Pilsen) in the Czech Republic in 1842. It\'s a bottom-fermented beer that uses a longer, cold aging process (lagering), and is known for its clarity, fine carbonation, and moderate alcohol content. (5-5.5 ABV, 18-22 IBU)'
