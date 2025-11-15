@@ -590,7 +590,7 @@ Please contact the customer to confirm their reservation.
                     <h3 className={`font-heading text-xl font-bold mb-2 ${
                       isDarkMode ? 'text-white' : 'text-gray-900'
                     }`}>
-                      Belgium wheat
+                      Belgium triple
                     </h3>
                     <p className={`font-paragraph text-sm mb-3 ${
                       isDarkMode ? 'text-primary' : 'text-primary'
