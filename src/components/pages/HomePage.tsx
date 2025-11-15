@@ -624,6 +624,8 @@ Please contact the customer to confirm their reservation.
                         ? 'Hefeweizen is a traditional German wheat beer that is cloudy, pale, and highly carbonated, known for its distinct flavors of banana and clove, created by a specific yeast strain. It has a creamy texture and fresh aroma\'s. (4.5-5% ABV, 13-15% IBU)'
                         : brewName === 'weizen bock'
                         ? 'Weizenbock is a strong German wheat beer that combines the rich maltiness of a bock with the fruity and spicy notes of a Weissbier. It is characterized by a malty, bready flavor profile and a balanced aroma of clove and banana, along with hints of dark fruit like plum and raisin. (5.5-6% ABV, 15-17 IBU)'
+                        : brewName === 'Mango wheat'
+                        ? 'Mango with beer, often called mango ale, is a fruity beer that combines the taste of beer with the sweet, sometimes tart, flavor of mangoes. It can range from a light, crisp ale perfect for summer to a creamy, milkshake-style ale, and is often low in bitterness with a pleasant aroma and refreshing finish. (4.5-5 ABV, 8-10 IBU)'
                         : brewName === 'Saison'
                         ? 'Saison is a pale, dry, and highly carbonated Belgian farmhouse ale, traditionally brewed for seasonal farm workers. It is known for its complex, spicy, and fruity flavors, often with a peppery yeast character and a high level of attenuation. (5.5-6% ABV, 26-28% IBU)'
                         : 'A carefully crafted brew with unique flavors and character.'
