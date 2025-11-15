@@ -579,6 +579,8 @@ Please contact the customer to confirm their reservation.
                           ? "https://static.wixstatic.com/media/4d5d5f_2e5338347e3c4aad83ab7cc1f41bde3c~mv2.jpg"
                           : brewName === 'Belgium triple'
                           ? "https://static.wixstatic.com/media/4d5d5f_6406d3080e86496d8379088b13b1e6ab~mv2.webp"
+                          : brewName === 'Belgium Pilsner'
+                          ? "https://static.wixstatic.com/media/4d5d5f_7f85734b101b4e9b94c911f7f366f2e2~mv2.webp"
                           : "https://static.wixstatic.com/media/4d5d5f_531895c85ac24c06be160a524c126a6e~mv2.png?originWidth=384&originHeight=256"
                       }
                       alt={brewName}
