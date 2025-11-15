@@ -1218,7 +1218,7 @@ Please contact the customer to confirm their reservation.
                       id="guests"
                       type="number"
                       min="1"
-                      max="20"
+                      max="100"
                       value={formData.guests}
                       onChange={(e) => setFormData({...formData, guests: e.target.value})}
                       className={`mt-1 ${
