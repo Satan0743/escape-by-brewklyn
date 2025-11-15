@@ -616,7 +616,7 @@ Please contact the customer to confirm their reservation.
                     <p className={`font-paragraph text-sm mb-4 ${
                       isDarkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}>
-                      {brewName === 'Belgium wheat' 
+                      {brewName === 'Belgium triple' 
                         ? 'A Belgian Tripel is a strong, pale ale from Belgium, known for its complex flavors from specialty yeast strains. It\'s typically golden in color with a moderate to high alcohol content (7-7.5% ABV, 23-26 IBU) and features a balance of spicy, fruity, and grainy-sweet notes.'
                         : 'A carefully crafted brew with unique flavors and character.'
                       }
