@@ -618,6 +618,8 @@ Please contact the customer to confirm their reservation.
                     }`}>
                       {brewName === 'Belgium triple' 
                         ? 'A Belgian Tripel is a strong, pale ale from Belgium, known for its complex flavors from specialty yeast strains. It\'s typically golden in color with a moderate to high alcohol content (7-7.5% ABV, 23-26 IBU) and features a balance of spicy, fruity, and grainy-sweet notes.'
+                        : brewName === 'hefeweizen'
+                        ? 'Hefeweizen is a traditional German wheat beer that is cloudy, pale, and highly carbonated, known for its distinct flavors of banana and clove, created by a specific yeast strain. It has a creamy texture and fresh aroma\'s. (4.5-5% ABV, 13-15% IBU)'
                         : 'A carefully crafted brew with unique flavors and character.'
                       }
                     </p>
