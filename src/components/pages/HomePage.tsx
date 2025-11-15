@@ -436,7 +436,7 @@ Please contact the customer to confirm their reservation.
                       isDarkMode ? 'bg-black/40' : 'bg-white/20'
                     }`}>
                       <div className={`text-2xl font-bold ${isDarkMode ? 'text-primary' : 'text-white'}`}>
-                        15+
+                        5+
                       </div>
                       <div className={`text-xs ${isDarkMode ? 'text-gray-200' : 'text-white'}`}>
                         Signature Brews
