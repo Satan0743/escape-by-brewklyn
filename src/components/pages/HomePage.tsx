@@ -1317,7 +1317,6 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    Sunday Funday brunch and game day specials.
                   </p>
                 </CardContent>
               </Card>
