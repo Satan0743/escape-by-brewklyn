@@ -1317,6 +1317,7 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
+                    🎷 Sunday Jazz & Billboard Karaoke Unwind with soulful jazz and chart-topping hits. 🎤 Open mic for all 🍸 Smooth cocktails 🪄 Easy, cozy, Sunday vibes Sing it slow. Sing it loud. Sing it your way.
                   </p>
                 </CardContent>
               </Card>
