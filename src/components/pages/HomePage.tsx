@@ -1185,8 +1185,8 @@ Please contact the customer to confirm their reservation.
               } transition-all duration-300 hover:scale-105`}>
                 <div className="relative">
                   <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_c3869befcb4b4480b3a42e4db437ca26~mv2.png?originWidth=384&originHeight=192"
-                    alt="Thursday classic cocktails"
+                    src="https://static.wixstatic.com/media/4d5d5f_925786643b4c47f4a25b4b084f2f118b~mv2.avif"
+                    alt="Thursday food offers"
                     className="w-full h-48 object-cover"
                     width={400}
                   />
@@ -1584,7 +1584,7 @@ Please contact the customer to confirm their reservation.
                 
                 <div className="flex gap-4">
                   {[
-                    { icon: Instagram, label: 'Instagram', url: 'https://www.instagram.com/escape.brewklyn?utm_source=qr&igsh=MTI0dm9kYmc5cjlhcw==' },
+                    { icon: Instagram, label: 'Instagram', url: 'https://www.instagram.com/ESCAPE.BREWKLYN' },
                     { icon: Facebook, label: 'Facebook', url: 'https://www.facebook.com/share/17QCwzdsYr/' }
                   ].map(({ icon: Icon, label, url }) => (
                     <button
