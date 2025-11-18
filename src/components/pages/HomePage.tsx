@@ -1061,101 +1061,206 @@ Please contact the customer to confirm their reservation.
             </p>
           </motion.div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {events.map((event, index) => (
-              <motion.div
-                key={event._id}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group"
-              >
-                <Card className={`overflow-hidden ${
-                  isDarkMode 
-                    ? 'bg-background border-gray-700' 
-                    : 'bg-white border-gray-200'
-                } transition-all duration-300 hover:scale-105 ${
-                  event.isHappyHour 
-                    ? (isDarkMode 
-                        ? 'ring-2 ring-primary shadow-lg shadow-primary/20' 
-                        : 'ring-2 ring-primary shadow-lg')
-                    : ''
-                }`}>
-                  {event.eventImage && (
-                    <div className="relative">
-                      <Image
-                        src={event.eventImage}
-                        alt={event.eventName || "Event"}
-                        className="w-full h-48 object-cover"
-                        width={400}
-                      />
-                      {event.isHappyHour && (
-                        <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-bold ${
-                          isDarkMode 
-                            ? 'bg-primary text-primary-foreground' 
-                            : 'bg-primary text-primary-foreground'
-                        } ${isDarkMode ? 'shadow-lg shadow-primary/50' : ''}`}>
-                          Happy Hour
-                        </div>
-                      )}
-                    </div>
-                  )}
-                  
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-2 mb-3">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {/* Monday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Monday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Start your week right with our Monday specials.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-                      <span className={`text-sm ${
-                        isDarkMode ? 'text-gray-400' : 'text-gray-600'
-                      }`}>
-                        {event.eventDate ? new Date(event.eventDate).toLocaleDateString() : 'TBA'}
-                      </span>
-                      {event.eventTime && (
-                        <>
-                          <Clock className={`w-4 h-4 ml-2 ${
-                            isDarkMode ? 'text-primary' : 'text-primary'
-                          }`} />
-                          <span className={`text-sm ${
-                            isDarkMode ? 'text-gray-400' : 'text-gray-600'
-                          }`}>
-                            {event.eventTime}
-                          </span>
-                        </>
-                      )}
-                    </div>
-                    
-                    <h3 className={`font-heading text-xl font-bold mb-3 ${
-                      isDarkMode ? 'text-white' : 'text-gray-900'
-                    }`}>
-                      {event.eventName}
-                    </h3>
-                    
-                    <p className={`font-paragraph text-sm mb-4 ${
-                      isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                    }`}>
-                      {event.description}
-                    </p>
-                    
-                    {event.ctaText && (
-                      <Button
-                        size="sm"
-                        className={`w-full ${
-                          event.isHappyHour 
-                            ? (isDarkMode 
-                                ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
-                                : 'bg-primary hover:bg-primary/90 text-primary-foreground')
-                            : (isDarkMode 
-                                ? 'bg-secondary-foreground hover:bg-gray-600 text-background' 
-                                : 'bg-gray-900 hover:bg-gray-800 text-white')
-                        } transition-all duration-300`}
-                      >
-                        {event.ctaText}
-                      </Button>
-                    )}
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
+            {/* Tuesday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Tuesday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Taco Tuesday and craft beer pairings.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Wednesday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 2 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Wednesday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Wing Wednesday with signature sauces.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Thursday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 3 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Thursday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Throwback Thursday with classic cocktails.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Friday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 4 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105 ring-2 ring-primary shadow-lg ${
+                isDarkMode ? 'shadow-primary/20' : ''
+              }`}>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Friday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Friday Night Live with music and happy hour.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Saturday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 5 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105 ring-2 ring-primary shadow-lg ${
+                isDarkMode ? 'shadow-primary/20' : ''
+              }`}>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Saturday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Saturday Night Specials and DJ sets.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Sunday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 6 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Sunday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Sunday Funday brunch and game day specials.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
           </div>
         </div>
       </section>
