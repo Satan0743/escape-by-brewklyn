@@ -1276,7 +1276,6 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    Saturday Night Specials and DJ sets.
                   </p>
                 </CardContent>
               </Card>
