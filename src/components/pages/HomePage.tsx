@@ -86,7 +86,30 @@ export default function HomePage() {
         BaseCrudService.getAll<Events>('events')
       ]);
       setSignatureBrews(brewsResponse.items.slice(0, 4));
-      setEvents(eventsResponse.items.slice(0, 6));
+      
+      // Update "Neon Beats DJ Night" to "Monday" if it exists
+      const events = eventsResponse.items;
+      const neonBeatsEvent = events.find(event => event.eventName === 'Neon Beats DJ Night');
+      if (neonBeatsEvent) {
+        try {
+          await BaseCrudService.update('events', { 
+            _id: neonBeatsEvent._id, 
+            eventName: 'Monday' 
+          });
+          // Update the local state to reflect the change
+          const updatedEvents = events.map(event => 
+            event._id === neonBeatsEvent._id 
+              ? { ...event, eventName: 'Monday' }
+              : event
+          );
+          setEvents(updatedEvents.slice(0, 6));
+        } catch (updateError) {
+          console.error('Error updating event:', updateError);
+          setEvents(events.slice(0, 6));
+        }
+      } else {
+        setEvents(events.slice(0, 6));
+      }
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -1103,55 +1126,17 @@ Please contact the customer to confirm their reservation.
                   )}
                   
                   <CardContent className="p-6">
-                    <div className="flex items-center gap-2 mb-3">
-
-                      <span className={`text-sm ${
-                        isDarkMode ? 'text-gray-400' : 'text-gray-600'
-                      }`}>
-                        {event.eventDate ? new Date(event.eventDate).toLocaleDateString() : 'TBA'}
-                      </span>
-                      {event.eventTime && (
-                        <>
-                          <Clock className={`w-4 h-4 ml-2 ${
-                            isDarkMode ? 'text-primary' : 'text-primary'
-                          }`} />
-                          <span className={`text-sm ${
-                            isDarkMode ? 'text-gray-400' : 'text-gray-600'
-                          }`}>
-                            {event.eventTime}
-                          </span>
-                        </>
-                      )}
-                    </div>
-                    
                     <h3 className={`font-heading text-xl font-bold mb-3 ${
                       isDarkMode ? 'text-white' : 'text-gray-900'
                     }`}>
                       {event.eventName}
                     </h3>
-                    
                     <p className={`font-paragraph text-sm mb-4 ${
                       isDarkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}>
                       {event.description}
                     </p>
-                    
-                    {event.ctaText && (
-                      <Button
-                        size="sm"
-                        className={`w-full ${
-                          event.isHappyHour 
-                            ? (isDarkMode 
-                                ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25' 
-                                : 'bg-primary hover:bg-primary/90 text-primary-foreground')
-                            : (isDarkMode 
-                                ? 'bg-secondary-foreground hover:bg-gray-600 text-background' 
-                                : 'bg-gray-900 hover:bg-gray-800 text-white')
-                        } transition-all duration-300`}
-                      >
-                        {event.ctaText}
-                      </Button>
-                    )}
+
                   </CardContent>
                 </Card>
               </motion.div>
