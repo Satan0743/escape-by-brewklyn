@@ -1276,6 +1276,7 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
+                    Saturday Holly Bolly Night 🔥 Dance to the biggest Bollywood bangers! 🎧 DJ spinning Bollywood + Tollywood + Punjabi hits 💃 Hook-step dance-offs 🍻 Brews, cocktails & full desi vibe Saturday = Masala + Music + Masti
                   </p>
                 </CardContent>
               </Card>
