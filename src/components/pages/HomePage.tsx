@@ -1077,8 +1077,8 @@ Please contact the customer to confirm their reservation.
               } transition-all duration-300 hover:scale-105`}>
                 <div className="relative">
                   <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_e100a0c1b72a4426aa0313c80555081e~mv2.png?originWidth=384&originHeight=192"
-                    alt="Monday restaurant specials"
+                    src="https://static.wixstatic.com/media/4d5d5f_9a1dcd520738479c81ccf51ab6bf5582~mv2.png"
+                    alt="Monday drink offers"
                     className="w-full h-48 object-cover"
                     width={400}
                   />
@@ -1149,8 +1149,8 @@ Please contact the customer to confirm their reservation.
               } transition-all duration-300 hover:scale-105`}>
                 <div className="relative">
                   <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_47a52898cda843f691877c9a904e1e93~mv2.png?originWidth=384&originHeight=192"
-                    alt="Wednesday chicken wings"
+                    src="https://static.wixstatic.com/media/4d5d5f_896c7f734cae4a9ca6f644549392d677~mv2.jpg"
+                    alt="Wednesday ladies night"
                     className="w-full h-48 object-cover"
                     width={400}
                   />
