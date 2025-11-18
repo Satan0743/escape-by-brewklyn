@@ -1075,6 +1075,14 @@ Please contact the customer to confirm their reservation.
                   ? 'bg-background border-gray-700' 
                   : 'bg-white border-gray-200'
               } transition-all duration-300 hover:scale-105`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_e100a0c1b72a4426aa0313c80555081e~mv2.png?originWidth=384&originHeight=192"
+                    alt="Monday restaurant specials"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
@@ -1103,6 +1111,14 @@ Please contact the customer to confirm their reservation.
                   ? 'bg-background border-gray-700' 
                   : 'bg-white border-gray-200'
               } transition-all duration-300 hover:scale-105`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_5ab145ca432b479da506d5c7fd90030f~mv2.png?originWidth=384&originHeight=192"
+                    alt="Tuesday taco special"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
@@ -1131,6 +1147,14 @@ Please contact the customer to confirm their reservation.
                   ? 'bg-background border-gray-700' 
                   : 'bg-white border-gray-200'
               } transition-all duration-300 hover:scale-105`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_47a52898cda843f691877c9a904e1e93~mv2.png?originWidth=384&originHeight=192"
+                    alt="Wednesday chicken wings"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
@@ -1159,6 +1183,14 @@ Please contact the customer to confirm their reservation.
                   ? 'bg-background border-gray-700' 
                   : 'bg-white border-gray-200'
               } transition-all duration-300 hover:scale-105`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_c3869befcb4b4480b3a42e4db437ca26~mv2.png?originWidth=384&originHeight=192"
+                    alt="Thursday classic cocktails"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
@@ -1189,6 +1221,14 @@ Please contact the customer to confirm their reservation.
               } transition-all duration-300 hover:scale-105 ring-2 ring-primary shadow-lg ${
                 isDarkMode ? 'shadow-primary/20' : ''
               }`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_2afeef18c6a74a208eec6e5542af349e~mv2.png?originWidth=384&originHeight=192"
+                    alt="Friday night live music"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
@@ -1219,6 +1259,14 @@ Please contact the customer to confirm their reservation.
               } transition-all duration-300 hover:scale-105 ring-2 ring-primary shadow-lg ${
                 isDarkMode ? 'shadow-primary/20' : ''
               }`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_77d51b331b214719b758114fb2b349fd~mv2.png?originWidth=384&originHeight=192"
+                    alt="Saturday night DJ party"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
@@ -1247,6 +1295,14 @@ Please contact the customer to confirm their reservation.
                   ? 'bg-background border-gray-700' 
                   : 'bg-white border-gray-200'
               } transition-all duration-300 hover:scale-105`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_62b61628ce7149ffa147c8552643a59e~mv2.png?originWidth=384&originHeight=192"
+                    alt="Sunday brunch"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
