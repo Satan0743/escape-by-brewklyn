@@ -1092,7 +1092,7 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    Start your week right with our Monday specials.
+                    drink related offers(happy hours, CRAFT CHUG CHALLENGE).
                   </p>
                 </CardContent>
               </Card>
