@@ -1200,7 +1200,7 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    Throwback Thursday with classic cocktails.
+                    Food related offers (spicy wings challenge, limited meal veg|non veg|seafood|) Sunday-gaming combo |screening night|
                   </p>
                 </CardContent>
               </Card>
