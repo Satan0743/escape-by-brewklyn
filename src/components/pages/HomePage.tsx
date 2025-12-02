@@ -595,12 +595,7 @@ Please contact the customer to confirm their reservation.
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                       width={400}
                     />
-                    <Image
-                      src="https://static.wixstatic.com/media/4d5d5f_98db3c8e99d9415fa14b5ce74008aac9~mv2.png"
-                      className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                      width={400}
-                      height={256}
-                    />
+
                   </div>
                   
                   <CardContent className="p-6">
