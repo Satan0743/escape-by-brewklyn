@@ -572,31 +572,7 @@ Please contact the customer to confirm their reservation.
                 } transition-all duration-300 ${
                   isDarkMode ? 'hover:shadow-lg hover:shadow-primary/10' : 'hover:shadow-xl'
                 }`}>
-                  <div className="relative overflow-hidden">
-                    <Image
-                      src={
-                        brewName === 'Belgium wheat' 
-                          ? "https://static.wixstatic.com/media/4d5d5f_2e5338347e3c4aad83ab7cc1f41bde3c~mv2.jpg"
-                          : brewName === 'Belgium triple'
-                          ? "https://static.wixstatic.com/media/4d5d5f_6406d3080e86496d8379088b13b1e6ab~mv2.webp"
-                          : brewName === 'Belgium Pilsner'
-                          ? "https://static.wixstatic.com/media/4d5d5f_7f85734b101b4e9b94c911f7f366f2e2~mv2.webp"
-                          : brewName === 'hefeweizen'
-                          ? "https://static.wixstatic.com/media/4d5d5f_2e43884477474213858990d157a7738e~mv2.webp"
-                          : brewName === 'weizen bock'
-                          ? "https://static.wixstatic.com/media/4d5d5f_6ecdd848d1954a64a9ce82603b2ebe14~mv2.jpg"
-                          : brewName === 'Mango wheat'
-                          ? "https://static.wixstatic.com/media/4d5d5f_965a8a4a32fd49b58d1fdd261493c87f~mv2.jpg"
-                          : brewName === 'Saison'
-                          ? "https://static.wixstatic.com/media/4d5d5f_0608022f2855411a80362cfbbe9e63f8~mv2.webp"
-                          : "https://static.wixstatic.com/media/4d5d5f_531895c85ac24c06be160a524c126a6e~mv2.png?originWidth=384&originHeight=256"
-                      }
-                      alt={brewName}
-                      className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                      width={400}
-                    />
 
-                  </div>
                   
                   <CardContent className="p-6">
                     <h3 className={`font-heading text-xl font-bold mb-2 ${
