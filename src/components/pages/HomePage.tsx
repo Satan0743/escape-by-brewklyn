@@ -181,8 +181,8 @@ Please contact the customer to confirm their reservation.
             >
               <Image
                 src="https://static.wixstatic.com/media/4d5d5f_f5ac964b85534ad6850fa320f3b6c1ac~mv2.jpg"
-                className="h-20 w-auto border-[0px] border-[#ebe5e8] border-solid"
-                width={260}
+                className="h-12 w-auto border-[0px] border-[#ebe5e8] border-solid"
+                width={200}
                 alt="Escape by Brewklyn logo" />
             </motion.div>
 
@@ -221,11 +221,11 @@ Please contact the customer to confirm their reservation.
               
               <Button
                 onClick={() => scrollToSection('contact')}
-                className={`px-8 py-3 text-base font-semibold ${
+                className={`${
                   isDarkMode 
                     ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
                     : 'bg-primary hover:bg-primary/90 text-primary-foreground'
-                } transition-all duration-300`}
+                } transition-all duration-300 px-8 py-3 text-lg`}
               >
                 Reserve Now
               </Button>
