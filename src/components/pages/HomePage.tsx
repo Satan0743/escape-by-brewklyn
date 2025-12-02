@@ -592,6 +592,16 @@ Please contact the customer to confirm their reservation.
                       />
                     </div>
                   )}
+                  {brewName === 'Belgium triple' && (
+                    <div className="relative overflow-hidden">
+                      <Image
+                        src="https://static.wixstatic.com/media/4d5d5f_40345416c2b7474eb3e95aafd7121fb0~mv2.png"
+                        alt="Belgium triple"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                        width={400}
+                      />
+                    </div>
+                  )}
                   
                   <CardContent className="p-6">
                     <h3 className={`font-heading text-xl font-bold mb-2 ${
