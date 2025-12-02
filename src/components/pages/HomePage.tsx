@@ -504,7 +504,7 @@ Please contact the customer to confirm their reservation.
               <div className="flex items-center gap-8 pt-4">
                 <div className="text-center">
                   <div className={`text-3xl font-bold ${isDarkMode ? 'text-primary' : 'text-primary'}`}>
-                    15+
+                    5+
                   </div>
                   <div className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                     Signature Brews
