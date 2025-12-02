@@ -595,11 +595,13 @@ Please contact the customer to confirm their reservation.
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                       width={400}
                     />
-                    <div className={`absolute inset-0 ${
-                      isDarkMode 
-                        ? 'bg-gradient-to-t from-black/60 to-transparent' 
-                        : 'bg-gradient-to-t from-black/30 to-transparent'
-                    } opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+                    <Image
+                      src="https://static.wixstatic.com/media/4d5d5f_81e4760085df426cb31562257aedfd2b~mv2.png"
+                      alt="Overlay"
+                      className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      width={400}
+                      height={256}
+                    />
                   </div>
                   
                   <CardContent className="p-6">
