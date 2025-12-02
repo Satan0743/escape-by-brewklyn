@@ -582,6 +582,16 @@ Please contact the customer to confirm their reservation.
                       />
                     </div>
                   )}
+                  {brewName === 'Belgium wheat' && (
+                    <div className="relative overflow-hidden">
+                      <Image
+                        src="https://static.wixstatic.com/media/4d5d5f_e362700cc8e34bac81e249a3a67a9870~mv2.png"
+                        alt="Belgium wheat"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                        width={400}
+                      />
+                    </div>
+                  )}
                   
                   <CardContent className="p-6">
                     <h3 className={`font-heading text-xl font-bold mb-2 ${
