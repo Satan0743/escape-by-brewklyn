@@ -221,7 +221,7 @@ Please contact the customer to confirm their reservation.
               
               <Button
                 onClick={() => scrollToSection('contact')}
-                className={`${
+                className={`px-8 py-3 text-base font-semibold ${
                   isDarkMode 
                     ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
                     : 'bg-primary hover:bg-primary/90 text-primary-foreground'
