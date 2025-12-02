@@ -632,6 +632,16 @@ Please contact the customer to confirm their reservation.
                       />
                     </div>
                   )}
+                  {brewName === 'Saison' && (
+                    <div className="relative overflow-hidden">
+                      <Image
+                        src="https://static.wixstatic.com/media/4d5d5f_9675d25df37649d496e4af1674c9d84b~mv2.png"
+                        alt="Saison"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                        width={400}
+                      />
+                    </div>
+                  )}
                   
                   <CardContent className="p-6">
                     <h3 className={`font-heading text-xl font-bold mb-2 ${
