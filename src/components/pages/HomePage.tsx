@@ -596,8 +596,7 @@ Please contact the customer to confirm their reservation.
                       width={400}
                     />
                     <Image
-                      src="https://static.wixstatic.com/media/4d5d5f_423d78d873b94b0bab504a44a198ebdd~mv2.png"
-                      alt="Overlay"
+                      src="https://static.wixstatic.com/media/4d5d5f_98db3c8e99d9415fa14b5ce74008aac9~mv2.png"
                       className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                       width={400}
                       height={256}
