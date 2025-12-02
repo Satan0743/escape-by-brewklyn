@@ -612,6 +612,16 @@ Please contact the customer to confirm their reservation.
                       />
                     </div>
                   )}
+                  {brewName === 'weizen bock' && (
+                    <div className="relative overflow-hidden">
+                      <Image
+                        src="https://static.wixstatic.com/media/4d5d5f_426b163950a64ba189ddfcd49bdf20c7~mv2.png"
+                        alt="weizen bock"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                        width={400}
+                      />
+                    </div>
+                  )}
                   
                   <CardContent className="p-6">
                     <h3 className={`font-heading text-xl font-bold mb-2 ${
