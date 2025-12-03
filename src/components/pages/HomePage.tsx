@@ -183,9 +183,7 @@ Please contact the customer to confirm their reservation.
                 src="https://static.wixstatic.com/media/4d5d5f_d72c20cb56694eca939cb2e67adb26de~mv2.png"
                 className="h-20 w-auto shadow-[inset_0px_0px_4px_0px_#bfbfbf] -ml-2 rounded-none border-[0px] border-[undefined] border-none"
                 width={250}
-                alt="Escape by Brewklyn logo"
-                focalPointX={49.39759036144578}
-                focalPointY={42.77108433734939} />
+                alt="Escape by Brewklyn logo" />
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -227,24 +225,7 @@ Please contact the customer to confirm their reservation.
                   isDarkMode 
                     ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
                     : 'bg-primary hover:bg-primary/90 text-primary-foreground'
-                } transition-all duration-300 px-8 py-3 text-lg`}
-                className="pt-[12px] pr-[31px] pb-[12px] pl-[31px]"
-                className="pt-[12px] pr-[30px] pb-[12px] pl-[30px]"
-                className="pt-[12px] pr-[29px] pb-[12px] pl-[29px]"
-                className="pt-[12px] pr-[28px] pb-[12px] pl-[28px]"
-                className="pt-[12px] pr-[27px] pb-[12px] pl-[27px]"
-                className="pt-[12px] pr-[26px] pb-[12px] pl-[26px]"
-                className="pt-[12px] pr-[25px] pb-[12px] pl-[25px]"
-                className="pt-[12px] pr-[24px] pb-[12px] pl-[24px]"
-                className="pt-[12px] pr-[23px] pb-[12px] pl-[23px]"
-                className="pt-[12px] pr-[22px] pb-[12px] pl-[22px]"
-                className="pt-[12px] pr-[21px] pb-[12px] pl-[21px]"
-                className="pt-[12px] pr-[20px] pb-[12px] pl-[20px]"
-                className="pt-[12px] pr-[19px] pb-[12px] pl-[19px]"
-                className="pt-[12px] pr-[18px] pb-[12px] pl-[18px]"
-                className="pt-[12px] pr-[17px] pb-[12px] pl-[17px]"
-                className="pt-[12px] pr-[16px] pb-[12px] pl-[16px]"
-                className="pt-[12px] pr-[16px] pb-[12px] pl-[16px]">
+                } transition-all duration-300 px-8 py-3 text-lg`}>
                 Reserve Now
               </Button>
             </div>
@@ -513,7 +494,7 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    Taco Tuesday and craft beer pairings.
+                    Anime themed day with anime live stream
                   </p>
                 </CardContent>
               </Card>
@@ -948,7 +929,7 @@ Please contact the customer to confirm their reservation.
                     </div>
                   )}
                   
-                  <CardContent className="p-6">
+                  <CardContent className="p-[24px]">
                     <h3 className={`font-heading text-xl font-bold mb-2 ${
                       isDarkMode ? 'text-white' : 'text-gray-900'
                     }`}>
