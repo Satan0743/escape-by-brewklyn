@@ -458,7 +458,7 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    drink related offers(happy hours, CRAFT CHUG CHALLENGE).
+                    Chug challenge (drink 6 craft beers in 3mins, it's free otherwise need to pay) 3-8pm quick bite 399/1mug+snack | 499/1mug+snack+starter.
                   </p>
                 </CardContent>
               </Card>
