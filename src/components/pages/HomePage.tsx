@@ -405,6 +405,293 @@ Please contact the customer to confirm their reservation.
           </motion.div>
         </div>
       </section>
+      {/* Events & Offers Section */}
+      <section id="events" className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
+        <div className="max-w-[120rem] mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className={`font-heading text-5xl md:text-6xl font-bold mb-6 ${
+              isDarkMode ? 'text-white' : 'text-gray-900'
+            }`}>
+              Events & Offers
+            </h2>
+            <p className={`font-paragraph text-xl max-w-3xl mx-auto ${
+              isDarkMode ? 'text-gray-300' : 'text-gray-600'
+            }`}>
+              Don't miss out on our special events and exclusive offers. 
+              Your next great night starts here.
+            </p>
+          </motion.div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {/* Monday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_9a1dcd520738479c81ccf51ab6bf5582~mv2.png"
+                    alt="Monday drink offers"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Monday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    drink related offers(happy hours, CRAFT CHUG CHALLENGE).
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Tuesday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_5ab145ca432b479da506d5c7fd90030f~mv2.png?originWidth=384&originHeight=192"
+                    alt="Tuesday taco special"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Tuesday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Taco Tuesday and craft beer pairings.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Wednesday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 2 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_896c7f734cae4a9ca6f644549392d677~mv2.jpg"
+                    alt="Wednesday ladies night"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Wednesday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Grab your girl gang and step into mid-week magic. 💃 Free shots for ladies 🎶 DJ spinning your favorite beats 🍹 Signature cocktails at irresistible prices Make your Wednesday feel like a Saturday
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Thursday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 3 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_925786643b4c47f4a25b4b084f2f118b~mv2.avif"
+                    alt="Thursday food offers"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Thursday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Food related offers (spicy wings challenge, limited meal veg|non veg|seafood|) Sunday-gaming combo |screening night|
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Friday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 4 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105 ring-2 ring-primary shadow-lg ${
+                isDarkMode ? 'shadow-primary/20' : ''
+              }`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_2afeef18c6a74a208eec6e5542af349e~mv2.png?originWidth=384&originHeight=192"
+                    alt="Friday night live music"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Friday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    🍺 Brews • Beats • Friday Heat<br />
+                    Your favorite DJ + your favorite pint.<br />
+                    ✨ Happy hour till 9<br />
+                    🎵 Floor-shaking mixes<br />
+                    🍔 Late-night bites<br />
+                    Friday feels better with good music.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Saturday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 5 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105 ring-2 ring-primary shadow-lg ${
+                isDarkMode ? 'shadow-primary/20' : ''
+              }`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_77d51b331b214719b758114fb2b349fd~mv2.png?originWidth=384&originHeight=192"
+                    alt="Saturday night DJ party"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Saturday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Saturday Holly Bolly Night 🔥 Dance to the biggest Bollywood bangers! 🎧 DJ spinning Bollywood + Tollywood + Punjabi hits 💃 Hook-step dance-offs 🍻 Brews, cocktails & full desi vibe Saturday = Masala + Music + Masti
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Sunday */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 6 * 0.1 }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <Card className={`overflow-hidden ${
+                isDarkMode 
+                  ? 'bg-background border-gray-700' 
+                  : 'bg-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <div className="relative">
+                  <Image
+                    src="https://static.wixstatic.com/media/4d5d5f_62b61628ce7149ffa147c8552643a59e~mv2.png?originWidth=384&originHeight=192"
+                    alt="Sunday brunch"
+                    className="w-full h-48 object-cover"
+                    width={400}
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className={`font-heading text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Sunday
+                  </h3>
+                  <p className={`font-paragraph text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    🎷 Sunday Jazz & Billboard Karaoke Unwind with soulful jazz and chart-topping hits. 🎤 Open mic for all 🍸 Smooth cocktails 🪄 Easy, cozy, Sunday vibes Sing it slow. Sing it loud. Sing it your way.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+      </section>
       {/* About Section */}
       <section id="about" className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
         <div className="max-w-[120rem] mx-auto">
@@ -1077,293 +1364,6 @@ Please contact the customer to confirm their reservation.
               </motion.div>
             </div>
           </motion.div>
-        </div>
-      </section>
-      {/* Events & Offers Section */}
-      <section id="events" className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
-        <div className="max-w-[120rem] mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className={`font-heading text-5xl md:text-6xl font-bold mb-6 ${
-              isDarkMode ? 'text-white' : 'text-gray-900'
-            }`}>
-              Events & Offers
-            </h2>
-            <p className={`font-paragraph text-xl max-w-3xl mx-auto ${
-              isDarkMode ? 'text-gray-300' : 'text-gray-600'
-            }`}>
-              Don't miss out on our special events and exclusive offers. 
-              Your next great night starts here.
-            </p>
-          </motion.div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {/* Monday */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0 * 0.1 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <Card className={`overflow-hidden ${
-                isDarkMode 
-                  ? 'bg-background border-gray-700' 
-                  : 'bg-white border-gray-200'
-              } transition-all duration-300 hover:scale-105`}>
-                <div className="relative">
-                  <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_9a1dcd520738479c81ccf51ab6bf5582~mv2.png"
-                    alt="Monday drink offers"
-                    className="w-full h-48 object-cover"
-                    width={400}
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className={`font-heading text-xl font-bold mb-3 ${
-                    isDarkMode ? 'text-white' : 'text-gray-900'
-                  }`}>
-                    Monday
-                  </h3>
-                  <p className={`font-paragraph text-sm ${
-                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                  }`}>
-                    drink related offers(happy hours, CRAFT CHUG CHALLENGE).
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Tuesday */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1 * 0.1 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <Card className={`overflow-hidden ${
-                isDarkMode 
-                  ? 'bg-background border-gray-700' 
-                  : 'bg-white border-gray-200'
-              } transition-all duration-300 hover:scale-105`}>
-                <div className="relative">
-                  <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_5ab145ca432b479da506d5c7fd90030f~mv2.png?originWidth=384&originHeight=192"
-                    alt="Tuesday taco special"
-                    className="w-full h-48 object-cover"
-                    width={400}
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className={`font-heading text-xl font-bold mb-3 ${
-                    isDarkMode ? 'text-white' : 'text-gray-900'
-                  }`}>
-                    Tuesday
-                  </h3>
-                  <p className={`font-paragraph text-sm ${
-                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                  }`}>
-                    Taco Tuesday and craft beer pairings.
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Wednesday */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 2 * 0.1 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <Card className={`overflow-hidden ${
-                isDarkMode 
-                  ? 'bg-background border-gray-700' 
-                  : 'bg-white border-gray-200'
-              } transition-all duration-300 hover:scale-105`}>
-                <div className="relative">
-                  <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_896c7f734cae4a9ca6f644549392d677~mv2.jpg"
-                    alt="Wednesday ladies night"
-                    className="w-full h-48 object-cover"
-                    width={400}
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className={`font-heading text-xl font-bold mb-3 ${
-                    isDarkMode ? 'text-white' : 'text-gray-900'
-                  }`}>
-                    Wednesday
-                  </h3>
-                  <p className={`font-paragraph text-sm ${
-                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                  }`}>
-                    Grab your girl gang and step into mid-week magic. 💃 Free shots for ladies 🎶 DJ spinning your favorite beats 🍹 Signature cocktails at irresistible prices Make your Wednesday feel like a Saturday
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Thursday */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 3 * 0.1 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <Card className={`overflow-hidden ${
-                isDarkMode 
-                  ? 'bg-background border-gray-700' 
-                  : 'bg-white border-gray-200'
-              } transition-all duration-300 hover:scale-105`}>
-                <div className="relative">
-                  <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_925786643b4c47f4a25b4b084f2f118b~mv2.avif"
-                    alt="Thursday food offers"
-                    className="w-full h-48 object-cover"
-                    width={400}
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className={`font-heading text-xl font-bold mb-3 ${
-                    isDarkMode ? 'text-white' : 'text-gray-900'
-                  }`}>
-                    Thursday
-                  </h3>
-                  <p className={`font-paragraph text-sm ${
-                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                  }`}>
-                    Food related offers (spicy wings challenge, limited meal veg|non veg|seafood|) Sunday-gaming combo |screening night|
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Friday */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 4 * 0.1 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <Card className={`overflow-hidden ${
-                isDarkMode 
-                  ? 'bg-background border-gray-700' 
-                  : 'bg-white border-gray-200'
-              } transition-all duration-300 hover:scale-105 ring-2 ring-primary shadow-lg ${
-                isDarkMode ? 'shadow-primary/20' : ''
-              }`}>
-                <div className="relative">
-                  <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_2afeef18c6a74a208eec6e5542af349e~mv2.png?originWidth=384&originHeight=192"
-                    alt="Friday night live music"
-                    className="w-full h-48 object-cover"
-                    width={400}
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className={`font-heading text-xl font-bold mb-3 ${
-                    isDarkMode ? 'text-white' : 'text-gray-900'
-                  }`}>
-                    Friday
-                  </h3>
-                  <p className={`font-paragraph text-sm ${
-                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                  }`}>
-                    🍺 Brews • Beats • Friday Heat<br />
-                    Your favorite DJ + your favorite pint.<br />
-                    ✨ Happy hour till 9<br />
-                    🎵 Floor-shaking mixes<br />
-                    🍔 Late-night bites<br />
-                    Friday feels better with good music.
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Saturday */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 5 * 0.1 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <Card className={`overflow-hidden ${
-                isDarkMode 
-                  ? 'bg-background border-gray-700' 
-                  : 'bg-white border-gray-200'
-              } transition-all duration-300 hover:scale-105 ring-2 ring-primary shadow-lg ${
-                isDarkMode ? 'shadow-primary/20' : ''
-              }`}>
-                <div className="relative">
-                  <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_77d51b331b214719b758114fb2b349fd~mv2.png?originWidth=384&originHeight=192"
-                    alt="Saturday night DJ party"
-                    className="w-full h-48 object-cover"
-                    width={400}
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className={`font-heading text-xl font-bold mb-3 ${
-                    isDarkMode ? 'text-white' : 'text-gray-900'
-                  }`}>
-                    Saturday
-                  </h3>
-                  <p className={`font-paragraph text-sm ${
-                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                  }`}>
-                    Saturday Holly Bolly Night 🔥 Dance to the biggest Bollywood bangers! 🎧 DJ spinning Bollywood + Tollywood + Punjabi hits 💃 Hook-step dance-offs 🍻 Brews, cocktails & full desi vibe Saturday = Masala + Music + Masti
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Sunday */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 6 * 0.1 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <Card className={`overflow-hidden ${
-                isDarkMode 
-                  ? 'bg-background border-gray-700' 
-                  : 'bg-white border-gray-200'
-              } transition-all duration-300 hover:scale-105`}>
-                <div className="relative">
-                  <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_62b61628ce7149ffa147c8552643a59e~mv2.png?originWidth=384&originHeight=192"
-                    alt="Sunday brunch"
-                    className="w-full h-48 object-cover"
-                    width={400}
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className={`font-heading text-xl font-bold mb-3 ${
-                    isDarkMode ? 'text-white' : 'text-gray-900'
-                  }`}>
-                    Sunday
-                  </h3>
-                  <p className={`font-paragraph text-sm ${
-                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                  }`}>
-                    🎷 Sunday Jazz & Billboard Karaoke Unwind with soulful jazz and chart-topping hits. 🎤 Open mic for all 🍸 Smooth cocktails 🪄 Easy, cozy, Sunday vibes Sing it slow. Sing it loud. Sing it your way.
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-          </div>
         </div>
       </section>
       {/* Contact & Reservations Section */}
