@@ -177,13 +177,18 @@ Please contact the customer to confirm their reservation.
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="flex items-center"
+              className="flex items-center gap-3"
             >
-              <Image
-                src="https://static.wixstatic.com/media/4d5d5f_d72c20cb56694eca939cb2e67adb26de~mv2.png"
-                className="h-20 w-auto -ml-2 border-[0px] border-[undefined] border-none shadow-[12px_12px_4px_0px_#d9d9d9] rounded-[40px]"
-                width={250}
-                alt="Escape by Brewklyn logo" />
+              <div className={`w-12 h-12 rounded-lg flex items-center justify-center font-bold text-xl ${
+                isDarkMode 
+                  ? 'bg-primary text-primary-foreground' 
+                  : 'bg-primary text-primary-foreground'
+              }`}>
+                🍺
+              </div>
+              <span className="font-heading text-2xl font-bold hidden sm:inline">
+                BrewHouse
+              </span>
             </motion.div>
 
             {/* Desktop Navigation */}
