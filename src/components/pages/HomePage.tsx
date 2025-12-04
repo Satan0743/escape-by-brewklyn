@@ -179,16 +179,7 @@ Please contact the customer to confirm their reservation.
               transition={{ duration: 0.6 }}
               className="flex items-center gap-3"
             >
-              <div className={`w-12 h-12 rounded-lg flex items-center justify-center font-bold text-xl ${
-                isDarkMode 
-                  ? 'bg-primary text-primary-foreground' 
-                  : 'bg-primary text-primary-foreground'
-              }`}>
-                🍺
-              </div>
-              <span className="font-heading text-2xl font-bold hidden sm:inline">
-                BrewHouse
-              </span>
+              <Image src="https://static.wixstatic.com/media/4d5d5f_018434608a10489685301bbf85e99a38~mv2.png" alt="Brewklyn Logo" className="h-12 w-auto" />
             </motion.div>
 
             {/* Desktop Navigation */}
