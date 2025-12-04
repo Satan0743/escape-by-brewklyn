@@ -530,7 +530,7 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    Grab your girl gang and step into mid-week magic. 💃 Free shots for ladies 🎶 DJ spinning your favorite beats 🍹 Signature cocktails at irresistible prices Make your Wednesday feel like a Saturday
+                    Wednesday night ladies nigh
                   </p>
                 </CardContent>
               </Card>
