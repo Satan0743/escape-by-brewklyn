@@ -181,7 +181,7 @@ Please contact the customer to confirm their reservation.
             >
               <Image
                 src="https://static.wixstatic.com/media/4d5d5f_d72c20cb56694eca939cb2e67adb26de~mv2.png"
-                className="h-20 w-auto shadow-[inset_0px_0px_4px_0px_#bfbfbf] -ml-2 rounded-none border-[0px] border-[undefined] border-none"
+                className="h-20 w-auto -ml-2 border-[0px] border-[undefined] border-none shadow-[12px_12px_4px_0px_#d9d9d9] rounded-[40px]"
                 width={250}
                 alt="Escape by Brewklyn logo" />
             </motion.div>
@@ -566,7 +566,7 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    Food related offers (spicy wings challenge, limited meal veg|non veg|seafood|) Sunday-gaming combo |screening night|
+                    Thursday spicy wings challenge (finish the spicy wings alone in 2mins) it's free otherwise need to pay.
                   </p>
                 </CardContent>
               </Card>
