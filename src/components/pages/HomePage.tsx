@@ -600,12 +600,7 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    🍺 Brews • Beats • Friday Heat<br />
-                    Your favorite DJ + your favorite pint.<br />
-                    ✨ Happy hour till 9<br />
-                    🎵 Floor-shaking mixes<br />
-                    🍔 Late-night bites<br />
-                    Friday feels better with good music.
+                    Standup comedy / Flea marketing / Live music + DJ
                   </p>
                 </CardContent>
               </Card>
