@@ -216,19 +216,7 @@ Please contact the customer to confirm their reservation.
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center space-x-3">
-              <motion.button
-                onClick={toggleTheme}
-                className={`p-2 rounded-full ${
-                  isDarkMode 
-                    ? 'bg-secondary text-primary' 
-                    : 'bg-gray-100 text-gray-700'
-                } transition-all duration-300`}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-              </motion.button>
-              
+
               <motion.button
                 onClick={toggleMobileMenu}
                 className={`p-2 rounded-lg ${
