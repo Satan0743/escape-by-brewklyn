@@ -451,11 +451,13 @@ Please contact the customer to confirm their reservation.
               } transition-all duration-300 hover:scale-105`}>
                 <div className="relative">
                   <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_5ab145ca432b479da506d5c7fd90030f~mv2.png?originWidth=384&originHeight=192"
-                    alt="Tuesday taco special"
+                    src="https://static.wixstatic.com/media/4d5d5f_3e368247ac3c4fc0b36d33e4d598ce7e~mv2.png"
                     className="w-full h-48 object-cover"
                     width={400}
-                  />
+                    originWidth={1024}
+                    originHeight={1024}
+                    focalPointX={34.85107421875}
+                    focalPointY={48.333740234375} />
                 </div>
                 <CardContent className="p-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
@@ -635,11 +637,13 @@ Please contact the customer to confirm their reservation.
               } transition-all duration-300 hover:scale-105`}>
                 <div className="relative">
                   <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_62b61628ce7149ffa147c8552643a59e~mv2.png?originWidth=384&originHeight=192"
-                    alt="Sunday brunch"
+                    src="https://static.wixstatic.com/media/4d5d5f_f9a7da1b18604f5d9c7b89d9520a2a58~mv2.png"
                     className="w-full h-48 object-cover"
                     width={400}
-                  />
+                    originWidth={1024}
+                    originHeight={1024}
+                    focalPointX={38.25461647727273}
+                    focalPointY={45.77414772727273} />
                 </div>
                 <CardContent className="p-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
@@ -1018,71 +1022,71 @@ Please contact the customer to confirm their reservation.
                   {brewName === 'Belgium Pilsner' && (
                     <div className="relative overflow-hidden">
                       <Image
-                        src="https://static.wixstatic.com/media/4d5d5f_6680e1ebce28417abfaa671831ed1141~mv2.png"
-                        alt="Belgium Pilsner"
+                        src="https://static.wixstatic.com/media/4d5d5f_383df27ea4994acfa5adac26d4e87be4~mv2.png"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400}
-                      />
+                        originWidth={1024}
+                        originHeight={1024} />
                     </div>
                   )}
                   {brewName === 'Belgium wheat' && (
                     <div className="relative overflow-hidden">
                       <Image
-                        src="https://static.wixstatic.com/media/4d5d5f_e362700cc8e34bac81e249a3a67a9870~mv2.png"
-                        alt="Belgium wheat"
+                        src="https://static.wixstatic.com/media/4d5d5f_00985adc97b14d48914bed5eb9b40dba~mv2.png"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400}
-                      />
+                        originWidth={1024}
+                        originHeight={1024} />
                     </div>
                   )}
                   {brewName === 'Belgium triple' && (
                     <div className="relative overflow-hidden">
                       <Image
-                        src="https://static.wixstatic.com/media/4d5d5f_40345416c2b7474eb3e95aafd7121fb0~mv2.png"
-                        alt="Belgium triple"
+                        src="https://static.wixstatic.com/media/4d5d5f_969e3c40dc7a4278a70344d542e0381f~mv2.png"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400}
-                      />
+                        originWidth={1024}
+                        originHeight={1024} />
                     </div>
                   )}
                   {brewName === 'hefeweizen' && (
                     <div className="relative overflow-hidden">
                       <Image
-                        src="https://static.wixstatic.com/media/4d5d5f_a9a9979c7fea4e1e83699815fdcaef81~mv2.png"
-                        alt="hefeweizen"
+                        src="https://static.wixstatic.com/media/4d5d5f_bdf011fbab834d10a33814469c5a4671~mv2.png"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400}
-                      />
+                        originWidth={1024}
+                        originHeight={1024} />
                     </div>
                   )}
                   {brewName === 'weizen bock' && (
                     <div className="relative overflow-hidden">
                       <Image
-                        src="https://static.wixstatic.com/media/4d5d5f_426b163950a64ba189ddfcd49bdf20c7~mv2.png"
-                        alt="weizen bock"
+                        src="https://static.wixstatic.com/media/4d5d5f_48d9ee81c4e049f19b971cabd84bf1fe~mv2.png"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400}
-                      />
+                        originWidth={1024}
+                        originHeight={1024} />
                     </div>
                   )}
                   {brewName === 'Mango wheat' && (
                     <div className="relative overflow-hidden">
                       <Image
-                        src="https://static.wixstatic.com/media/4d5d5f_ceeb8dadc5f34cd79d0b72e7b68a9422~mv2.png"
-                        alt="Mango wheat"
+                        src="https://static.wixstatic.com/media/4d5d5f_32d2c94cf8a946e09a520d441b65aede~mv2.png"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400}
-                      />
+                        originWidth={1024}
+                        originHeight={1024} />
                     </div>
                   )}
                   {brewName === 'Saison' && (
                     <div className="relative overflow-hidden">
                       <Image
-                        src="https://static.wixstatic.com/media/4d5d5f_9675d25df37649d496e4af1674c9d84b~mv2.png"
-                        alt="Saison"
+                        src="https://static.wixstatic.com/media/4d5d5f_27b0b24015644829a292eca8f84556d2~mv2.png"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400}
-                      />
+                        originWidth={1344}
+                        originHeight={768} />
                     </div>
                   )}
                   
