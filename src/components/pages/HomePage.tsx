@@ -1442,11 +1442,11 @@ Please contact the customer to confirm their reservation.
             viewport={{ once: true }}
           >
             <h2 className="font-heading text-6xl md:text-7xl font-black text-white mb-8">
-              Not Just a Pub.{' '}
+              Crafted brews.{' '}
               <span className={`${isDarkMode ? 'text-primary' : 'text-primary'} ${
                 isDarkMode ? 'drop-shadow-[0_0_30px_rgba(255,140,0,0.8)]' : ''
               }`}>
-                An Escape.
+                Urban vibes. Your escape awaits.
               </span>
             </h2>
             
