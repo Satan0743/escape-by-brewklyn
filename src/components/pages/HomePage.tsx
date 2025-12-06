@@ -1004,9 +1004,9 @@ Please contact the customer to confirm their reservation.
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -10 }}
-                className="group"
+                className="group h-full"
               >
-                <Card className={`overflow-hidden ${
+                <Card className={`overflow-hidden h-full flex flex-col ${
                   isDarkMode 
                     ? 'bg-secondary border-gray-700 hover:border-primary/50' 
                     : 'bg-white border-gray-200 hover:border-primary/50'
