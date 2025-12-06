@@ -202,19 +202,7 @@ Please contact the customer to confirm their reservation.
 
             {/* Desktop Theme Toggle & CTA */}
             <div className="hidden md:flex items-center space-x-4">
-              <motion.button
-                onClick={toggleTheme}
-                className={`p-2 rounded-full ${
-                  isDarkMode 
-                    ? 'bg-secondary text-primary hover:bg-primary hover:text-primary-foreground' 
-                    : 'bg-gray-100 text-gray-700 hover:bg-primary hover:text-primary-foreground'
-                } transition-all duration-300`}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {isDarkMode ? <Sun className="w-5 h-5 p-[0px]" /> : <Moon className="w-5 h-5 p-[0px]" />}
-              </motion.button>
-              
+
               <Button
                 onClick={() => scrollToSection('contact')}
                 className={`${
@@ -682,7 +670,6 @@ Please contact the customer to confirm their reservation.
           </div>
         </div>
       </section>
-
       {/* Offers Section */}
       <section id="offers" className={`py-24 px-8 ${isDarkMode ? 'bg-black' : 'bg-white'}`}>
         <div className="max-w-[120rem] mx-auto">
@@ -873,7 +860,6 @@ Please contact the customer to confirm their reservation.
           </div>
         </div>
       </section>
-
       {/* About Section */}
       <section id="about" className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
         <div className="max-w-[120rem] mx-auto">
