@@ -682,6 +682,198 @@ Please contact the customer to confirm their reservation.
           </div>
         </div>
       </section>
+
+      {/* Offers Section */}
+      <section id="offers" className={`py-24 px-8 ${isDarkMode ? 'bg-black' : 'bg-white'}`}>
+        <div className="max-w-[120rem] mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className={`font-heading text-5xl md:text-6xl font-bold mb-6 ${
+              isDarkMode ? 'text-white' : 'text-gray-900'
+            }`}>
+              Special <span className={isDarkMode ? 'text-primary' : 'text-primary'}>Offers</span>
+            </h2>
+            <p className={`font-paragraph text-lg max-w-2xl mx-auto ${
+              isDarkMode ? 'text-gray-300' : 'text-gray-600'
+            }`}>
+              Discover our amazing deals and exclusive offers throughout the week
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Weekday Offers */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0 * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Card className={`overflow-hidden h-full ${
+                isDarkMode 
+                  ? 'bg-gradient-to-br from-gray-900 to-gray-800 border-gray-700' 
+                  : 'bg-gradient-to-br from-gray-50 to-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <CardContent className="p-8">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+                    isDarkMode ? 'bg-primary/20' : 'bg-primary/10'
+                  }`}>
+                    <Clock className={`w-6 h-6 ${isDarkMode ? 'text-primary' : 'text-primary'}`} />
+                  </div>
+                  <h3 className={`font-heading text-2xl font-bold mb-4 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Weekday Offers
+                  </h3>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className={`font-heading font-semibold mb-2 ${
+                        isDarkMode ? 'text-primary' : 'text-primary'
+                      }`}>
+                        12-4pm Limited Lunch Plan
+                      </h4>
+                      <ul className={`font-paragraph text-sm space-y-1 ${
+                        isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                      }`}>
+                        <li>• Veg: ₹499</li>
+                        <li>• Non Veg: ₹699</li>
+                        <li>• Seafood: ₹799</li>
+                        <li className="text-xs italic mt-2">Weekdays only</li>
+                      </ul>
+                    </div>
+                    <div className="pt-4 border-t border-gray-600">
+                      <h4 className={`font-heading font-semibold mb-2 ${
+                        isDarkMode ? 'text-primary' : 'text-primary'
+                      }`}>
+                        3-8pm Quick Bite
+                      </h4>
+                      <ul className={`font-paragraph text-sm space-y-1 ${
+                        isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                      }`}>
+                        <li>• ₹399: 1 Mug + Snack</li>
+                        <li>• ₹499: 1 Mug + Snack + Starter</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* All Day Offers */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1 * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Card className={`overflow-hidden h-full ${
+                isDarkMode 
+                  ? 'bg-gradient-to-br from-gray-900 to-gray-800 border-gray-700' 
+                  : 'bg-gradient-to-br from-gray-50 to-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <CardContent className="p-8">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+                    isDarkMode ? 'bg-primary/20' : 'bg-primary/10'
+                  }`}>
+                    <Sparkles className={`w-6 h-6 ${isDarkMode ? 'text-primary' : 'text-primary'}`} />
+                  </div>
+                  <h3 className={`font-heading text-2xl font-bold mb-4 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    All Day Offers
+                  </h3>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className={`font-heading font-semibold mb-2 ${
+                        isDarkMode ? 'text-primary' : 'text-primary'
+                      }`}>
+                        Happy Hours
+                      </h4>
+                      <p className={`font-paragraph text-sm ${
+                        isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                      }`}>
+                        ₹399: Buy 1 & Get 1 Free (up to 6pm)
+                      </p>
+                    </div>
+                    <div className="pt-4 border-t border-gray-600">
+                      <h4 className={`font-heading font-semibold mb-2 ${
+                        isDarkMode ? 'text-primary' : 'text-primary'
+                      }`}>
+                        Corporate Team Buffet
+                      </h4>
+                      <p className={`font-paragraph text-sm ${
+                        isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                      }`}>
+                        Flat 25% off on 25+ pax
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Weekend Offers */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 2 * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Card className={`overflow-hidden h-full ${
+                isDarkMode 
+                  ? 'bg-gradient-to-br from-gray-900 to-gray-800 border-gray-700' 
+                  : 'bg-gradient-to-br from-gray-50 to-white border-gray-200'
+              } transition-all duration-300 hover:scale-105`}>
+                <CardContent className="p-8">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+                    isDarkMode ? 'bg-primary/20' : 'bg-primary/10'
+                  }`}>
+                    <Star className={`w-6 h-6 ${isDarkMode ? 'text-primary' : 'text-primary'}`} />
+                  </div>
+                  <h3 className={`font-heading text-2xl font-bold mb-4 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Weekend Offers
+                  </h3>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className={`font-heading font-semibold mb-2 ${
+                        isDarkMode ? 'text-primary' : 'text-primary'
+                      }`}>
+                        Unlimited Beer & Pizzas
+                      </h4>
+                      <p className={`font-paragraph text-sm ${
+                        isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                      }`}>
+                        ₹1399 per person for 2.5 hours (3-8pm)
+                      </p>
+                      <p className="text-xs italic mt-2">Weekends only</p>
+                    </div>
+                    <div className="pt-4 border-t border-gray-600">
+                      <h4 className={`font-heading font-semibold mb-2 ${
+                        isDarkMode ? 'text-primary' : 'text-primary'
+                      }`}>
+                        Sunday Gaming Combo
+                      </h4>
+                      <p className={`font-paragraph text-sm ${
+                        isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                      }`}>
+                        ₹1500: Drink + Snack + Food with 1.5hrs Gaming (PS4)
+                      </p>
+                      <p className="text-xs italic mt-2">Sundays only</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className={`py-24 px-8 ${isDarkMode ? 'bg-secondary' : 'bg-gray-50'}`}>
         <div className="max-w-[120rem] mx-auto">
