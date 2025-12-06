@@ -1077,7 +1077,7 @@ Please contact the customer to confirm their reservation.
                     </div>
                   )}
                   
-                  <CardContent className="p-[24px]">
+                  <CardContent className="p-[24px] flex-1 flex flex-col">
                     <h3 className={`font-heading text-xl font-bold mb-2 ${
                       isDarkMode ? 'text-white' : 'text-gray-900'
                     }`}>
@@ -1088,7 +1088,7 @@ Please contact the customer to confirm their reservation.
                     }`}>
                       Craft Beer
                     </p>
-                    <p className={`font-paragraph text-sm mb-4 ${
+                    <p className={`font-paragraph text-sm mb-4 flex-1 ${
                       isDarkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}>
                       {brewName === 'Belgium wheat'
