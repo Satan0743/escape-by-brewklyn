@@ -645,11 +645,35 @@ Please contact the customer to confirm their reservation.
                   }`}>
                     Sunday
                   </h3>
-                  <p className={`font-paragraph text-sm ${
+                  <p className={`font-paragraph text-sm mb-4 ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
                     Open Mike jamming sessions / pool table tournaments/board games/Live stream of f1/football on Sunday's
                   </p>
+                  <div className="flex gap-2">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className={`text-xs ${
+                        isDarkMode
+                          ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
+                          : 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
+                      }`}
+                    >
+                      Football
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className={`text-xs ${
+                        isDarkMode
+                          ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
+                          : 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
+                      }`}
+                    >
+                      Formula 1
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </motion.div>
