@@ -566,7 +566,7 @@ Please contact the customer to confirm their reservation.
                     width={400}
                   />
                 </div>
-                <CardContent className="p-6">
+                <CardContent className="p-6 py-10 px-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
                   }`}>
@@ -604,7 +604,7 @@ Please contact the customer to confirm their reservation.
                     width={400}
                   />
                 </div>
-                <CardContent className="p-6">
+                <CardContent className="p-6 py-10 px-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
                   }`}>
