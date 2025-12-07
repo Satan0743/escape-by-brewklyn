@@ -659,6 +659,7 @@ Please contact the customer to confirm their reservation.
                           ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
                           : 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
                       }`}
+                      onClick={() => window.open('https://www.fancode.com/football/schedule', '_blank')}
                     >
                       Football
                     </Button>
