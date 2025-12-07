@@ -179,7 +179,12 @@ Please contact the customer to confirm their reservation.
               transition={{ duration: 0.6 }}
               className="flex items-center gap-3"
             >
-              <Image src="https://static.wixstatic.com/media/4d5d5f_018434608a10489685301bbf85e99a38~mv2.png" alt="Brewklyn Logo" className="h-12 w-auto" />
+              <Image
+                src="https://static.wixstatic.com/media/4d5d5f_018434608a10489685301bbf85e99a38~mv2.png"
+                alt="Brewklyn Logo"
+                className="h-12 w-auto border-gray-200 border border-none m-2.5 shadow-[inset_0px_0px_4px_0px_#bfbfbf] rounded-[10px]"
+                focalPointX={49.39759036144578}
+                focalPointY={40.36144578313253} />
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -501,7 +506,7 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    Wednesday night ladies nigh
+                    Wednesday night ladies night
                   </p>
                 </CardContent>
               </Card>
@@ -598,11 +603,13 @@ Please contact the customer to confirm their reservation.
               }`}>
                 <div className="relative">
                   <Image
-                    src="https://static.wixstatic.com/media/4d5d5f_77d51b331b214719b758114fb2b349fd~mv2.png?originWidth=384&originHeight=192"
-                    alt="Saturday night DJ party"
+                    src="https://static.wixstatic.com/media/4d5d5f_0ec5ea86120f4b4d9738bb2a52811a0e~mv2.png"
                     className="w-full h-48 object-cover"
                     width={400}
-                  />
+                    originWidth={1024}
+                    originHeight={1024}
+                    focalPointX={58.38955965909091}
+                    focalPointY={66.05113636363636} />
                 </div>
                 <CardContent className="p-6 py-10 px-6">
                   <h3 className={`font-heading text-xl font-bold mb-3 ${
