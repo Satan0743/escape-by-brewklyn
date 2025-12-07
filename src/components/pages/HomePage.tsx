@@ -298,7 +298,7 @@ Please contact the customer to confirm their reservation.
             >
               <Image
                 src={heroImages[currentSlide]}
-                alt={`Craft beer pub atmosphere - slide ${currentSlide + 1}`}
+                alt={`Craft brew pub atmosphere - slide ${currentSlide + 1}`}
                 className="w-full h-full object-cover"
                 width={1920}
               />
@@ -430,7 +430,7 @@ Please contact the customer to confirm their reservation.
                   <p className={`font-paragraph text-sm ${
                     isDarkMode ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    Chug challenge (drink 6 craft beers in 3mins, it's free otherwise need to pay) 3-8pm quick bite 399/1mug+snack | 499/1mug+snack+starter.
+                    Chug challenge (drink 6 craft brews in 3mins, it's free otherwise need to pay) 3-8pm quick bite 399/1mug+snack | 499/1mug+snack+starter.
                   </p>
                 </CardContent>
               </Card>
@@ -817,7 +817,7 @@ Please contact the customer to confirm their reservation.
                       <h4 className={`font-heading font-semibold mb-2 ${
                         isDarkMode ? 'text-primary' : 'text-primary'
                       }`}>
-                        Unlimited Beer & Pizzas
+                        Unlimited Brew & Pizzas
                       </h4>
                       <p className={`font-paragraph text-sm ${
                         isDarkMode ? 'text-gray-300' : 'text-gray-600'
@@ -927,7 +927,7 @@ Please contact the customer to confirm their reservation.
               <div className="space-y-6 font-paragraph text-lg leading-relaxed">
                 <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>
                   Escape by Brewklyn isn't just another brewpub—it's a portal to a world where 
-                  exceptional craft beer meets the raw energy of urban nightlife. Born from a 
+                  exceptional craft brew meets the raw energy of urban nightlife. Born from a 
                   passion for brewing excellence and a love for Brooklyn's vibrant culture.
                 </p>
                 
@@ -1017,7 +1017,7 @@ Please contact the customer to confirm their reservation.
                     <div className="relative overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/4d5d5f_383df27ea4994acfa5adac26d4e87be4~mv2.png?originWidth=1024&originHeight=1024"
-                        alt="Belgium Pilsner craft beer"
+                        alt="Belgium Pilsner craft brew"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400} />
                     </div>
@@ -1026,7 +1026,7 @@ Please contact the customer to confirm their reservation.
                     <div className="relative overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/4d5d5f_00985adc97b14d48914bed5eb9b40dba~mv2.png?originWidth=1024&originHeight=1024"
-                        alt="Belgium wheat craft beer"
+                        alt="Belgium wheat craft brew"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400} />
                     </div>
@@ -1035,7 +1035,7 @@ Please contact the customer to confirm their reservation.
                     <div className="relative overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/4d5d5f_969e3c40dc7a4278a70344d542e0381f~mv2.png?originWidth=1024&originHeight=1024"
-                        alt="Belgium triple craft beer"
+                        alt="Belgium triple craft brew"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400} />
                     </div>
@@ -1044,7 +1044,7 @@ Please contact the customer to confirm their reservation.
                     <div className="relative overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/4d5d5f_bdf011fbab834d10a33814469c5a4671~mv2.png?originWidth=1024&originHeight=1024"
-                        alt="Hefeweizen craft beer"
+                        alt="Hefeweizen craft brew"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400} />
                     </div>
@@ -1053,7 +1053,7 @@ Please contact the customer to confirm their reservation.
                     <div className="relative overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/4d5d5f_48d9ee81c4e049f19b971cabd84bf1fe~mv2.png?originWidth=1024&originHeight=1024"
-                        alt="Weizen bock craft beer"
+                        alt="Weizen bock craft brew"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400} />
                     </div>
@@ -1062,7 +1062,7 @@ Please contact the customer to confirm their reservation.
                     <div className="relative overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/4d5d5f_32d2c94cf8a946e09a520d441b65aede~mv2.png?originWidth=1024&originHeight=1024"
-                        alt="Mango wheat craft beer"
+                        alt="Mango wheat craft brew"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400} />
                     </div>
@@ -1071,7 +1071,7 @@ Please contact the customer to confirm their reservation.
                     <div className="relative overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/4d5d5f_27b0b24015644829a292eca8f84556d2~mv2.png?originWidth=1344&originHeight=768"
-                        alt="Saison craft beer"
+                        alt="Saison craft brew"
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                         width={400} />
                     </div>
@@ -1086,13 +1086,13 @@ Please contact the customer to confirm their reservation.
                     <p className={`font-paragraph text-sm mb-3 ${
                       isDarkMode ? 'text-primary' : 'text-primary'
                     }`}>
-                      Craft Beer
+                      Craft Brew
                     </p>
                     <p className={`font-paragraph text-sm mb-4 flex-1 ${
                       isDarkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}>
                       {brewName === 'Belgium wheat'
-                        ? 'Immerse yourself in the timeless elegance of Belgian Wheat Beer — a gracefully crafted Witbier born from centuries of brewing mastery. Its signature golden haze glows softly in the glass, releasing delicate waves of sun-kissed citrus, crushed coriander, and subtle floral spice. Each sip is silky and refreshing, unfolding with a gentle wheat sweetness and a crisp, airy finish that lingers like a summer breeze. A beer that feels light yet refined, smooth yet expressive — the perfect harmony of tradition, craftsmanship, and pure refreshment.'
+                        ? 'Immerse yourself in the timeless elegance of Belgian Wheat Brew — a gracefully crafted Witbier born from centuries of brewing mastery. Its signature golden haze glows softly in the glass, releasing delicate waves of sun-kissed citrus, crushed coriander, and subtle floral spice. Each sip is silky and refreshing, unfolding with a gentle wheat sweetness and a crisp, airy finish that lingers like a summer breeze. A brew that feels light yet refined, smooth yet expressive — the perfect harmony of tradition, craftsmanship, and pure refreshment.'
                         : brewName === 'Belgium triple' 
                         ? 'A Belgian Tripel is a strong, pale ale from Belgium, known for its complex flavors from specialty yeast strains. It\'s typically golden in color with a moderate to high alcohol content (7-7.5% ABV, 23-26 IBU) and features a balance of spicy, fruity, and grainy-sweet notes.'
                         : brewName === 'Belgium Pilsner'
@@ -1451,7 +1451,7 @@ Please contact the customer to confirm their reservation.
             </h2>
             
             <p className="font-paragraph text-xl text-gray-300 max-w-3xl mx-auto mb-12">
-              Where live music meets craft beer, where strangers become friends, 
+              Where live music meets craft brew, where strangers become friends, 
               and where every night is an adventure waiting to unfold.
             </p>
             

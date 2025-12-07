@@ -331,8 +331,8 @@ export default function FoodMenuPage() {
       image: "https://static.wixstatic.com/media/4d5d5f_d4fa20bdeb674fa0a868abca33c9787a~mv2.png?originWidth=384&originHeight=256"
     },
     {
-      name: "Beer Battered Fish & Chips",
-      description: "Fresh fish in our signature beer batter with crispy fries",
+      name: "Brew Battered Fish & Chips",
+      description: "Fresh fish in our signature brew batter with crispy fries",
       price: "₹485",
       category: "Brew Bites",
       rating: 4.7,
@@ -349,8 +349,8 @@ export default function FoodMenuPage() {
       image: "https://static.wixstatic.com/media/4d5d5f_50990c3e6bb446638850ac6614f169e9~mv2.png?originWidth=384&originHeight=256"
     },
     {
-      name: "Craft Beer Sliders",
-      description: "Mini beef sliders with beer-infused sauce and pickles",
+      name: "Craft Brew Sliders",
+      description: "Mini beef sliders with brew-infused sauce and pickles",
       price: "₹445",
       category: "Brew Bites",
       rating: 4.9,
@@ -359,7 +359,7 @@ export default function FoodMenuPage() {
     },
     {
       name: "Pretzel Bites",
-      description: "Warm soft pretzel bites with beer cheese dip",
+      description: "Warm soft pretzel bites with brew cheese dip",
       price: "₹295",
       category: "Brew Bites",
       rating: 4.5,
@@ -691,7 +691,7 @@ export default function FoodMenuPage() {
               isDarkMode ? 'text-gray-300' : 'text-gray-600'
             }`}>
               Reserve your table now and experience the perfect combination of 
-              exceptional food and craft beer.
+              exceptional food and craft brew.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/#contact">
